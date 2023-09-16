@@ -4,7 +4,7 @@ import Powered from '../Assets/Frame 3901.png'
 import {AiOutlineMail, AiFillFacebook, AiOutlineTwitter, AiOutlineInstagram, AiFillLinkedin} from 'react-icons/ai'
 
 const Footer = () => {
-  return (
+return (
     <div className='footer'>
         <div className='detail'>
             <div className="detail-left deets">
