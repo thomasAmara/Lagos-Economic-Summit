@@ -30,7 +30,7 @@ const TextTruncate = ({ text, maxLength }) => {
     setIsTruncated(!isTruncated);
     };
 
-    const truncatedText = isTruncated ? text.slice(0, maxLength) + '...' : text;
+    const truncatedText = isTruncated ? text.slice(0, maxLength) + '' : text;
     return (
     <div className="text-truncate">
         <p dangerouslySetInnerHTML={{ __html: truncatedText.replace(/\n/g, '<br />') }} />

@@ -3,13 +3,13 @@
     background-image: url('../Assets/Background.png');
     background-size: cover; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-color: #f0f0f0;
     height: 100svh;
     display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
 }
 
 .summit-info{
@@ -88,7 +88,7 @@ h4{
     padding: 40px;
     background-color: #fff;
     border-radius: 10px;
-    gap: 20px;
+    gap: 10px;
     margin-top: 25px;
 }
 
@@ -118,8 +118,8 @@ h4{
     align-items: center;
 }
 .eko{
-    margin-bottom: 15px;
     margin: auto;
+    margin-bottom: 15px;
     font-weight: 700;
 }
 /* .eko {
@@ -137,15 +137,36 @@ h4{
     @media (max-width: 768px){
         .sc2-image{
             width: 100%;
-            max-width: screen;
             overflow-x: hidden;
+            margin: auto;
+            margin-left: -22px;
         }
-    }
+        }
 
 
 @media (max-width: 768px){
     .screenTwo-content{
         flex-direction: column;
         /* overflow-x: hidden; */
+    }
+}
+
+/* Speaker section */
+
+
+.speaker-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+@media (max-width: 768px){
+    .speaker-container{
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
     }
 }
