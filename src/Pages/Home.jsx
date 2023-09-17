@@ -8,6 +8,7 @@ import Speakers from '../Components/Speakers'
 import Footer from '../Components/Footer';
 
 function Home() {
+
   const longText = `The Lagos Climate Summit 2023, themed "Innovating for a Resilient Future: Youth Empowerment and SME Resilience in Climate Action."
 
   The Lagos Climate Summit 2023 - LCS2023 is not merely a conference; it stands as the convergence of visionary minds, impassioned leaders, and pioneers of transformative change. Rooted in the commitment to combat climate change through the catalytic potency of Artificial Intelligence (AI), our focus zeroes in on two crucial pillars: 
@@ -136,8 +137,6 @@ function Home() {
       </div>
       <Footer />
     </div>
-
-  );
 }
 
 export default Home;
