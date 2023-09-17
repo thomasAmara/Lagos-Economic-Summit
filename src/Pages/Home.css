@@ -27,7 +27,7 @@
             flex-direction: column;
         }
     }
-
+  
 .summit-info h2{
     font-size: 5rem;
     font-weight: 600;
@@ -56,6 +56,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+@media (max-width: 330px){
+    .top{
+        width: 100%;
+    }
 }
 .top p{
     line-height: 1.5;
@@ -94,4 +99,53 @@ h4{
 
 .bottom p{
     font-size: 14px;
+}
+
+
+/* Hero style ended */
+.screen-two{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.sc2-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eko{
+    margin-bottom: 15px;
+    margin: auto;
+    font-weight: 700;
+}
+/* .eko {
+    content: "";
+    display: block;
+    height: 1px;
+    width: calc(fit-content - 40px);
+    background-color: green; 
+    margin-top: 4px; 
+  } */
+.screenTwo-content{
+    display: flex;
+}
+
+    @media (max-width: 768px){
+        .sc2-image{
+            width: 100%;
+            max-width: screen;
+            overflow-x: hidden;
+        }
+    }
+
+
+@media (max-width: 768px){
+    .screenTwo-content{
+        flex-direction: column;
+        /* overflow-x: hidden; */
+    }
 }

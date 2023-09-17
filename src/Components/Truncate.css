@@ -1,0 +1,10 @@
+.read-more-button{
+    width: fit-content;
+    padding: 10px 14px;
+    color: #fff;
+    background: #0F3879;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
