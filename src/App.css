@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+=======
+
+
+/* .App {
+  text-align: center;
+>>>>>>> bc297614ba068dc2dffad4a3c8eb8211fb1100be
 }
 
 .App-logo {
@@ -37,4 +44,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
