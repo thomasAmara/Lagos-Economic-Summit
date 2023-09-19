@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Pages/Home.css'
-// import Print from '../Assets/print.png'
-import Print from '../group.png'
+import Print from '../Assets/print.png'
 import Killian from '../Assets/Killian.svg'
 import TextTruncate from '../Components/Truncate';
 import Speakers from '../Components/Speakers'
@@ -75,8 +74,10 @@ function Home() {
         </div>
 
         <div className="sc2-image">
+          <div className="footprint">
           <img src={Print} alt="carbon print" 
           style={{margin: 'auto'}}/>
+          </div>
         </div>
         </div>
       </div>
@@ -84,8 +85,9 @@ function Home() {
 
 
       {/* SPEAKERS SECTION */}
-<div className="speaker-wrap">
-      <p style={{textAlign: 'center'}} className="eko">SPEAKERS</p>
+      <div>
+      <div className="speaker-wrap">
+        <p className="topic">SPEAKERS</p>
       <div className='speaker-container'>        
       <Speakers
           src={Killian}
@@ -133,10 +135,12 @@ function Home() {
           caption="Killian Mayua"
           captions="Adanian Labs"
         />
-       </div>
+        </div>
+      </div>
       </div>
       <Footer />
     </div>
+  )
 }
 
 export default Home;

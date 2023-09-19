@@ -64,7 +64,7 @@
 }
 .top p{
     line-height: 1.5;
-    letter-spacing: 7.2px;
+    letter-spacing: 6.4px;
     margin: auto;
     font-size: 18px;
     color: #fff;
@@ -109,6 +109,8 @@ h4{
     width: 90%;
     margin: auto;
     padding: 25px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .sc2-text{
@@ -116,20 +118,37 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60%;
 }
-.eko{
+.sc2-image{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footprint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+@media (max-width: 768px){
+    .sc2-text, .sc2-image{
+        width: 100%;
+    }
+}
+
+.eko, .topic{
     margin: auto;
     margin-bottom: 15px;
     font-weight: 700;
+    border-bottom: 2px solid;
+    border-color: green;
+    width: fit-content;
+    text-align: center;
 }
-/* .eko {
-    content: "";
-    display: block;
-    height: 1px;
-    width: calc(fit-content - 40px);
-    background-color: green; 
-    margin-top: 4px; 
-  } */
+
 .screenTwo-content{
     display: flex;
 }
