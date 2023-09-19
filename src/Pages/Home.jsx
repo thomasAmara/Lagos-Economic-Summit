@@ -75,7 +75,7 @@ function Home() {
 
         <div className="sc2-image">
           <div className="footprint">
-          <img src={Print} alt="carbon print" 
+          <img src={Print} className='print' alt="carbon print" 
           style={{margin: 'auto'}}/>
           </div>
         </div>
@@ -88,12 +88,12 @@ function Home() {
       <div>
       <div className="speaker-wrap">
         <p className="topic">SPEAKERS</p>
-      <div className='speaker-container'>        
+      <div className='speaker-container'> 
       <Speakers
           src={Killian}
           alt="Image 1 Alt Text"
           caption="Killian Mayua"
-        />
+        /> 
         <Speakers
           src={Killian}
           alt="Image 1 Alt Text"
