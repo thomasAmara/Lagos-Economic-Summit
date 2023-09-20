@@ -62,12 +62,18 @@
         width: 100%;
     }
 }
+.top h2{
+    display: flex;
+    gap: 15px;
+}
 .top p{
     line-height: 1.5;
-    letter-spacing: 6.4px;
+    letter-spacing: 5px;
     margin: auto;
     font-size: 18px;
     color: #fff;
+    /* display: flex; */
+    /* gap: 15px; */
 }
 @media (max-width: 768px) {
     .top p{
@@ -152,7 +158,7 @@ h4{
     margin-bottom: 15px;
     font-weight: 700;
     border-bottom: 2px solid;
-    border-color: green;
+    border-color: #0F3879;
     width: fit-content;
     text-align: center;
 }
