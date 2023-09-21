@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Pages/Home.css'
-import Print from '../Assets/print.png'
+import Print from '../Assets/leave.png'
 import TextTruncate from '../Components/Truncate';
 import Footer from '../Components/Footer';
 import SpeakerOutput from '../Components/SpeakerOutput/SpeakerOutput';
-import SummitOutput from '../Components/SummitNumber/SummitNumber'
+// import SummitOutput from '../Components/SummitNumber/SummitNumber'
 import SummitNumber from '../Components/SummitNumber/SummitNumber';
 
 function Home() {
@@ -41,7 +41,7 @@ function Home() {
         <div className="bottom">
           <div className="date">
             <h4>Date:</h4>
-            <p>Date: Monday 13th of November 2023.</p>
+            <p>Monday 13th of November 2023.</p>
           </div>
 
           <div className="venue">

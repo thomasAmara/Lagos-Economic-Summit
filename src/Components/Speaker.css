@@ -42,7 +42,7 @@
 
   
   .image-container img{
-    width: 100%;
+    width: 900%;
     height: 100%;
   }
 
@@ -55,8 +55,8 @@
 
   @media  (max-width: 475px){
     .image-container{
-      width: 90%;
-      height: 40%;
+      width: 80%;
+      height: 35%;
     }
   }
   .caption{

@@ -10,6 +10,7 @@
     justify-content: center; 
     align-items: center; 
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .summit-info{
@@ -132,6 +133,12 @@ h4{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px){
+    .sc2-image{
+        display: none;
+    }
+}
 .footprint{
     display: flex;
     align-items: center;
@@ -146,6 +153,24 @@ h4{
     object-fit: cover;
 }
 
+.print{
+    height: 420px;
+    width: 380px;
+}
+
+/* @media (max-width: 400px){
+    .print{
+        height: 380px;
+        width: 320px;
+    }
+}
+
+@media (max-width: 330px){
+    .print{
+        height: 320px;
+        width: 280px;
+    }
+} */
 
 @media (max-width: 768px){
     .sc2-text, .sc2-image{
