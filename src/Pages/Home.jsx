@@ -141,6 +141,6 @@ function Home() {
     </div>
   )
 }
->>>>>>>>> Temporary merge branch 2
+// >>>>>>>>> Temporary merge branch 2
 
 export default Home;
