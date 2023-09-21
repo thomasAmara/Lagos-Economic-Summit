@@ -187,8 +187,8 @@ h4{
 /* Speaker section */
 
 
-.speaker-container{
-    width: 90%;
+/* .speaker-container{
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -198,8 +198,8 @@ h4{
 }
 @media (max-width: 768px){
     .speaker-container{
-        /* flex-direction: column; */
+       
         justify-content: center;
         align-items: center;
     }
-}
+} */

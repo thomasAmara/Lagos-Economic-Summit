@@ -1,10 +1,11 @@
 import React from 'react';
 import '../Pages/Home.css'
 import Print from '../Assets/print.png'
-import Killian from '../Assets/Killian.svg'
 import TextTruncate from '../Components/Truncate';
-import Speakers from '../Components/Speakers'
 import Footer from '../Components/Footer';
+import SpeakerOutput from '../Components/SpeakerOutput/SpeakerOutput';
+import SummitOutput from '../Components/SummitNumber/SummitNumber'
+import SummitNumber from '../Components/SummitNumber/SummitNumber';
 
 function Home() {
 
@@ -82,65 +83,13 @@ function Home() {
         </div>
       </div>
 
-
+      <div className="summit-section">
+        <SummitNumber />
+      </div>
 
       {/* SPEAKERS SECTION */}
-      <div>
-      <div className="speaker-wrap">
-        <p className="topic">SPEAKERS</p>
-      <div className='speaker-container'> 
-      <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        /> 
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-         <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        </div>
-      </div>
+      <div style={{padding: '25px 0'}}>
+        <SpeakerOutput />
       </div>
       <Footer />
     </div>
