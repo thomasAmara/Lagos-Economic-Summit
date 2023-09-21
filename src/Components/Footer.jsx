@@ -39,12 +39,22 @@ return (
                 <p style={{fontSize: '12px'}}>© 2023 The Lagos ESG Summit. All rights reserved.</p>
             </div>
             <div className='foot-icon'>
-                <AiFillMail />
-                {/* <AiFillFacebook /> */}
-                <FaFacebookF />
-                <AiOutlineTwitter />
-                <AiOutlineInstagram />
-                <AiFillLinkedin />
+
+            <a href="/" class="iconlink" target="_blank">
+            <AiFillMail />
+            </a>
+            <a href="/" class="iconlink" target="_blank">
+            <FaFacebookF />
+            </a>
+            <a href="https://twitter.com/OfficialApata" class="iconlink" target="_blank">
+            <AiOutlineTwitter />
+            </a>
+            <a href="/" class="iconlink" target="_blank">
+            <AiOutlineInstagram />
+            </a>
+            <a href="/" class="iconlink" target="_blank">
+            <AiFillLinkedin />
+            </a>
             </div>
         </div>
     </div>
