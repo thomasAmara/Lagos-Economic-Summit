@@ -134,6 +134,11 @@ function Home() {
           alt="Image 1 Alt Text"
           caption="Killian Mayua"
         />
+         <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption="Killian Mayua"
+        />
         </div>
       </div>
       </div>

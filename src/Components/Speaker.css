@@ -33,7 +33,7 @@
     opacity: 1;
   }
   .image-container{
-    width: 30%;
+    width: 16%;
     height: 30%;
     object-fit: cover;
       display: flex;
