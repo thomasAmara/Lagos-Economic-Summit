@@ -133,7 +133,6 @@ function Home() {
           src={Killian}
           alt="Image 1 Alt Text"
           caption="Killian Mayua"
-          captions="Adanian Labs"
         />
         </div>
       </div>
