@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react';
+import React  from 'react';
 import '../Pages/Home.css'
 import Print from '../Assets/leave.png'
 import TextTruncate from '../Components/Truncate';

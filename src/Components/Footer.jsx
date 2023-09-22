@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import './Footer.css'
 import Powered from '../Assets/Frame 3901.png'

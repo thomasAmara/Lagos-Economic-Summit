@@ -2,10 +2,10 @@ import React from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../../src/Images/LCS 2 1 (1).svg";
 import { Link } from "react-router-dom";
-import AboutUs from "../../Pages/AboutUs";
+// import AboutUs from "../../Pages/AboutUs";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { BiRightArrowAlt } from "react-icons/bi";
-import FAQ from "../../Pages/FAQ/FAQ";
+// import FAQ from "../../Pages/FAQ/FAQ";
 
 export default function Navbar() {
   return (
