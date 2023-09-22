@@ -2,6 +2,9 @@
     margin: 30px 0px;
 }
 
+.aboutUs-container ul{
+  margin-left: 10px;
+}
 .about-text-container {
 
     margin: 0px auto;
@@ -12,7 +15,7 @@
 }
 
 .aboutUs-text-container-text {
-    width: 65%;
+    width: 60%;
 }
 
 .aboutUs-text-container-text div {
@@ -25,7 +28,13 @@
 }
 
 .aboutUs-text-container-image {
-    width: 35%;
+  width: 35%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aboutUs-text-container-image img{
+  width: 85%;
 }
 
 /* Carousel */
@@ -44,7 +53,7 @@
 
   display: inline-block;
   padding-bottom: 5px;
-  width: 12px;
+
   /* borderBottomWidth: '12px' */
 }
 .carousel-container-content {
@@ -66,7 +75,9 @@
     width: 100%; /* Full width by default */
     max-width: 720px; /* Max width of 720px */
     padding: 20px;
-    background-color:  #0F3879;
+    background-image: url("../Assets/Card.png");
+    background-size: cover;
+  background-repeat: no-repeat;
     text-align: center;
     font-size: 14px;
     line-height: 23px;
@@ -75,6 +86,9 @@
     border-radius: 8px;
   }
   
+  /* background-image: url("../../../../public/Asset/TOPOVER.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
 
 
   .nav-button {
@@ -101,8 +115,119 @@
     margin: 30px auto;
     width: 89%;
   }
+
+  /* Map */
+
+  .map-container{
+    background-color: #ECFBFD;
+
+    padding: 30px 0px;
+    
+}
+
+.map-container-text p {
+text-align: center;
+}
+
+ .map-container-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto;
+   width: 89%;
+   column-gap: 30px;
+}
+
+.map-container-right-content,.map-container-left-content{
+  width: 48%
+}
+
+.map-container-right-content img,.map-container-left-content img{
+  width: 100%
+}
+
+.map-container-right-form-container{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 12px;
+
+}
+.map-container-right-form-container div{
+  width: 48%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.map-container-right-form-container div span{
+  font-size: 14px;
+}
+.map-container-right-form-container div input{
+  width: 100%;
+  padding: 8px 6px;
+  border: 0px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.google-button{
+   width:100%;
+  margin-top: 20px;
+}
+.map-button{
+  width:100%;
+  margin-top: 30px;
+}
+
+.map-button button{
+  width: 100%;
+background-color: #0F3879;
+color: white;
+padding: 7px;
+border-radius: 5px;
+border: 0px;
+font-size: 13px;
+}
+
+.google-button button{
+  width: 100%;
+  background-color: transparent;
+  color: #0F3879;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #0F3879;
+  font-size: 13px;
+}
+/* 
+.map-container-content div{
+  width: 50%;
+
+} */
+
+
   /* Media query for screens with a width less than or equal to 720px */
   @media (max-width: 720px) {
+
+    .about-text-container {
+
+      margin: 0px auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+  }
+
+  .aboutUs-text-container-image{
+    display: none;
+  }
+
+  .aboutUs-text-container-text {
+    width: 100%;
+}
+  
     .carousel {
     /* Stack cards vertically on small screens */
     
@@ -113,5 +238,18 @@
       width: 100%; /* Full width for each card on small screens */
       margin-right: 0; /* No margin between cards */
     }
+
+    .map-container-content {
+      display: flex;
+    flex-direction: column;
+    }
+    .map-container-right-content,.map-container-left-content{
+      width: 100%
+    }
+
+    .map-container-left-content{
+  margin-top: 40px;
+    }
   }
   
+
