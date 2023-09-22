@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import AboutUs from '../../Pages/AboutUs'
 import {BiSolidDownArrow} from "react-icons/bi"
 import {BiRightArrowAlt} from "react-icons/bi"
-import FAQ from '../../Pages/FAQ'
+import FAQ from '../../Pages/FAQ/FAQ'
 
 export default function Navbar() {
   return (
