@@ -11,7 +11,8 @@ const SpeakerOutput = () => {
       <Speakers
           src={Killian}
           alt="Image 1 Alt Text"
-          caption="Killian Mayua"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
         /> 
         <Speakers
           src={Killian}

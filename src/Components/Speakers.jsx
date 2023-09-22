@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Speaker.css";
 
-const ImageWithCaption = ({ src, alt, caption }) => {
+const ImageWithCaption = ({ src, alt, caption, secCaption}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -22,6 +22,9 @@ const ImageWithCaption = ({ src, alt, caption }) => {
       <img src={src} alt={alt} className="image" />
       <div className={`caption ${isHovered ? "overlay-visible" : ""}`}>
         {caption}
+      </div>
+      <div className={`secCaption ${isHovered ? "overlay-visible" : ""}`}>
+        {secCaption}
       </div>
     </div>
   );
