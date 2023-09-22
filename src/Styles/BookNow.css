@@ -1,0 +1,78 @@
+.backgroundImage{
+    background-image: url('../Assets/mainImg.png');
+    background-position: 100%;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF
+}
+
+.bookContainer{
+ border: 2px solid red;
+ height: 100vh
+}
+.topContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+/* padding-top: 20px; */
+padding: 20px 30px;
+
+}
+.profileContainer{
+    max-width: 400px;
+    border-radius: 5px;
+    width:100%;
+    /* padding: 1px 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #0F3879
+}
+.profileHeader{
+    background-color: #0F3879;
+    border: 2px;
+    padding: 10px;
+    width: 96%;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+}
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-btn button{
+    width: 50%;
+    background-color: #0F3879;
+    padding: 10px 0;
+    color: white;
+    border: 1px solid #0F3879;
+    margin-top: 20px;
+  }
+ .bookButton {
+    border: none;
+    border-radius: 5px;
+    background-color:  #0F3879; 
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .bookButton:hover {
+    background-color: #1448a0; 
+}
+
+.buttonContainer{
+margin-bottom: 25px;
+}
