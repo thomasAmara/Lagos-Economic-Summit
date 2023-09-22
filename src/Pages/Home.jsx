@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import '../Pages/Home.css'
 import Print from '../Assets/leave.png'
 import TextTruncate from '../Components/Truncate';
@@ -9,6 +9,8 @@ import SummitNumber from '../Components/SummitNumber/SummitNumber';
 import Hero from '../Components/Hero/Hero'
 
 function Home() {
+
+
 
   const longText = `The Lagos Climate Summit 2023, themed "Innovating for a Resilient Future: Youth Empowerment and SME Resilience in Climate Action."
 
