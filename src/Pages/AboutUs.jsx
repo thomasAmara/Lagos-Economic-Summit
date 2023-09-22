@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import FootPrint from "../Assets/leave.png";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Rating from '@mui/material/Rating';
@@ -64,9 +64,9 @@ function AboutUs() {
     // Add more cards as needed
   ];
 
-  useEffect(() => {
+  // useEffect(() => {
 
-  }, [window.innerWidth])
+  // }, [window.innerWidth])
 
   const numCardsToShow = window.innerWidth <= 720 ? 1 : 3; // Adjust the number of cards to show based on screen width
 
