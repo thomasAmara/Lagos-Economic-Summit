@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar/Navbar';
 const AboutUs = lazy(() => import('./Pages/AboutUs'));
 const Home = lazy(() => import('./Pages/Home'));
 const FAQ = lazy(() => import('./Pages/FAQ'));
+const Sponsors = lazy(() => import('./Pages/Sponsors'));
+const BookNow = lazy(() => import('./Pages/Book'));
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/Aboutus' element={<AboutUs />} />
             <Route path='/FAQ' element={<FAQ />} />
+            <Route path='/BookNow' element={<BookNow />}/>
+            <Route path='/Sponsors' element={<Sponsors />}/>
           </Routes>
         </Suspense>
     </div>
