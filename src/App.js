@@ -4,9 +4,9 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 const AboutUs = lazy(() => import('./Pages/AboutUs'));
 const Home = lazy(() => import('./Pages/Home'));
-const FAQ = lazy(() => import('./Pages/FAQ'));
-const Sponsors = lazy(() => import('./Pages/Sponsors'));
+const FAQ = lazy(() => import('./Pages/FAQ/FAQ'));
 const BookNow = lazy(() => import('./Pages/Book'));
+const Sponsors = lazy(() => import('./Pages/Sponsors'));
 
 function App() {
   return (
