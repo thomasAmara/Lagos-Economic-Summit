@@ -1,70 +1,72 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import FootPrint from "../Assets/print.png";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Rating from '@mui/material/Rating';
 import Killian from "../Assets/Killian.svg"
 import Speakers from "../Components/Speakers"
 import "./AboutUs.css"
+import lsc from "../Assets/LSC.png"
+import map from "../Assets/Map.png"
 
 function AboutUs() {
 
   const [slideIndex, setSlideIndex] = useState(0);
 
- 
+
   const cards = [
     {
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 3
     },
     {
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 4
     },
     {
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 5
     },
     {
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 4
     },
     {
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 3
-    },{
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+    }, {
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 5
     },
     {
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 4
     },
     {
-      text:"“Congratulations on a super event yesterday.”",
-      name:"Tom Williams",
-      job:"SoftWare Developer",
+      text: "“Congratulations on a super event yesterday.”",
+      name: "Tom Williams",
+      job: "SoftWare Developer",
       rank: 4
     },
     // Add more cards as needed
   ];
 
-  useEffect(()=>{
+  useEffect(() => {
 
-  },[window.innerWidth])
+  }, [window.innerWidth])
 
   const numCardsToShow = window.innerWidth <= 720 ? 1 : 3; // Adjust the number of cards to show based on screen width
 
@@ -83,11 +85,11 @@ function AboutUs() {
       <div className="card" key={index}>
         <p>{content.text}</p>
         <Rating
-        name="simple-controlled"
-        value={content.rank}
-        style={{marginTop:"12px"}}
-       
-      />
+          name="simple-controlled"
+          value={content.rank}
+          style={{ marginTop: "12px" }}
+
+        />
         <p>{content.name}</p>
         <p>{content.job}</p>
       </div>
@@ -145,88 +147,156 @@ function AboutUs() {
     </div>
 
 
-<div className="carousel-container">
-  <div className="carousel-container-text" >
-    <p>What the Community have to Say</p>
-  </div>
-<div className="carousel-container-content">
-      <button className="nav-button" onClick={handlePrev} disabled={slideIndex === 0}>
-        &lt; 
-      </button>
-      <div className="carousel">
-        {renderCards()}
+    <div className="carousel-container">
+      <div className="carousel-container-text" >
+        <p>What the Community have to Say</p>
       </div>
-      <button className="nav-button" onClick={handleNext} disabled={slideIndex === Math.ceil(cards.length / numCardsToShow) - 1}>
-     &gt;
-      </button>
+      <div className="carousel-container-content">
+        <button className="nav-button" onClick={handlePrev} disabled={slideIndex === 0}>
+          &lt;
+        </button>
+        <div className="carousel">
+          {renderCards()}
+        </div>
+        <button className="nav-button" onClick={handleNext} disabled={slideIndex === Math.ceil(cards.length / numCardsToShow) - 1}>
+          &gt;
+        </button>
+      </div>
     </div>
-</div>
 
     <div className="agenda-container">
 
-<div className="agenda-container-content">
+      <div className="agenda-container-content">
 
 
-</div>
+      </div>
 
     </div>
 
+{/* Speaker */}
 
     <div className="speaker-container">
-    <div className="speaker-wrap">
-      <p style={{textAlign: 'center'}} className="eko">SPEAKERS</p>
-      <div className='speaker-container'>        
-      <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-          captions="Adanian Labs"
-        />
-       </div>
+      <div className="speaker-wrap">
+        <p style={{ textAlign: 'center' }} className="eko">SPEAKERS</p>
+        <div className='speaker-container'>
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+          />
+          <Speakers
+            src={Killian}
+            alt="Image 1 Alt Text"
+            caption="Killian Mayua"
+            captions="Adanian Labs"
+          />
+        </div>
       </div>
     </div>
+
+
+{/* Map */}
+    <div className="map-container">
+          <div className="map-container-text">
+                  <p>MAP</p>
+          </div>
+<div className="map-container-content">
+  <div className="map-container-right-content">
+      <div>
+          <img src={lsc} alt="Lagos"/>
+      </div>
+
+      <div  className="map-container-right-form-container">
+
+          <div >
+              <span>Name</span>
+              
+              <input placeholder="Enter Name"/>
+          </div>
+
+          <div>
+          <span>Subscribe Here</span>
+   
+          <input placeholder="Enter Email"/>
+          </div>
+
+          <div>
+          <span>Contact Me</span>
+
+          <input placeholder="Enter Contact"/>
+          </div>
+         
+          <div>
+          <span>Location</span>
+
+          <input placeholder="Enter Country"/>
+          </div>
+
+      </div>
+
+      <div className="map-button">
+        <button>Attend Submit</button>
+
+      </div>
+  </div>
+
+    <div className="map-container-left-content">
+      <div>
+      <img src={map} alt="Lagos"/>
+      </div>
+
+      <div className="google-button">
+      <button>Open In Google Map</button>
+      </div>
+      </div>
+</div>
+   
+
+    
+
+    </div>
+
 
   </div>;
 }
 
 export default AboutUs;
+
+
+
+
