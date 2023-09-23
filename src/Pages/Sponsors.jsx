@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Text, Image, Button, SimpleGrid } from "@chakra-ui/react";
-import Bolt from "../Assets/Bolts.png";
+import { Box, Text,  Button, SimpleGrid } from "@chakra-ui/react";
+// import Bolt from "../Assets/Bolts.png";
 
 export default function Sponsors() {
   return (
