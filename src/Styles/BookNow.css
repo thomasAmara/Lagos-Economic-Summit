@@ -1,78 +1,128 @@
-.backgroundImage{
-    background-image: url('../Assets/mainImg.png');
-    background-position: 100%;
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #FFF
+.backgroundImage {
+  background-image: url("../Assets/mainImg.png");
+  background-position: 100%;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
-.bookContainer{
- border: 2px solid red;
- height: 100vh
+.bookContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 0%;
+  border: 2px solid #1f88b2;
+  /* height: 100vh; */
 }
-.topContainer{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-/* padding-top: 20px; */
-padding: 20px 30px;
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  width: 100%;
+  /* padding-top: 20px; */
+  padding: 20px 30px;
+  /* border: 2px solid #1ae56e */
+}
+/* 
+.profileContainer {
+  max-width: 350px;
+  min-width: 240px;
+  width: 100%;
+  border-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #0f3879;
+}
+*/
+.profileHeader {
+  background-color: #0f3879;
+  border: 2px;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
 
+  align-items: center;
 }
-.profileContainer{
-    max-width: 400px;
-    border-radius: 5px;
-    width:100%;
-    /* padding: 1px 2px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #0F3879
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.profileHeader{
-    background-color: #0F3879;
-    border: 2px;
-    padding: 10px;
-    width: 96%;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    align-items: center;
+.priceText {
+  margin-top: 20px;
+  font-size: 48px;
+  color: #222222;
+  font-weight: 500;
 }
-.detailsContainer{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.vat {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 500;
 }
 
-.nav-btn button{
-    width: 50%;
-    background-color: #0F3879;
-    padding: 10px 0;
-    color: white;
-    border: 1px solid #0F3879;
-    margin-top: 20px;
-  }
- .bookButton {
-    border: none;
-    border-radius: 5px;
-    background-color:  #0F3879; 
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .bookButton:hover {
-    background-color: #1448a0; 
+.nav-btn button {
+  width: 50%;
+  background-color: #0f3879;
+  padding: 10px 0;
+  color: white;
+  border: 1px solid #0f3879;
+  margin-top: 20px;
+}
+.bookButton {
+  border: 1px solid #0f3879;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px 20px;
+  color: #0f3879;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.bookButton:hover {
+  background-color: #1448a0;
 }
 
-.buttonContainer{
-margin-bottom: 25px;
+.buttonContainer {
+  margin-bottom: 25px;
+}
+
+.midContainer {
+  max-width: 1280px;
+  width: 100%;
+  padding: 20px;
+}
+
+.delegateText {
+}
+
+.delegate {
+  color: #1f88b2;
+}
+
+.helpContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
