@@ -13,20 +13,37 @@ const ImageWithCaption = ({ src, alt, caption, secCaption}) => {
   };
 
   return (
-    <div
-      className={`image-container ${isHovered ? "hovered" : ""}`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    // <div
+    //   className={`image-container ${isHovered ? "hovered" : ""}`}
+    //   onMouseEnter={handleMouseEnter}
+    //   onMouseLeave={handleMouseLeave}
+    // >
     
-      <img src={src} alt={alt} className="image" />
-      <div className={`caption ${isHovered ? "overlay-visible" : ""}`}>
-        {caption}
-      </div>
-      <div className={`secCaption ${isHovered ? "overlay-visible" : ""}`}>
-        {secCaption}
-      </div>
-    </div>
+    //   <img src={src} alt={alt} className="image" />
+    //   <div className={`caption ${isHovered ? "overlay-visible" : ""}`}>
+    //     {caption}
+    //   </div>
+    //   <div className={`secCaption ${isHovered ? "overlay-visible" : ""}`}>
+    //     {secCaption}
+    //   </div>
+    // </div>
+    <div
+  className={`image-container ${isHovered ? "hovered" : ""}`}
+  onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}
+>
+  <img src={src} alt={alt} className="image" />
+  <div className={`overlay ${isHovered ? "overlay-visible" : ""}`} />
+  <div className={`caption ${isHovered ? "overlay-visible" : ""}`}>
+    {caption}
+  </div>
+  <div className={`secCaption ${isHovered ? "overlay-visible" : ""}`}>
+    {secCaption}
+  </div>
+</div>
+
+
+
   );
 };
 
