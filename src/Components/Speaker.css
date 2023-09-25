@@ -43,7 +43,7 @@
 
   .caption {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%); 
     /* background-color: rgba(0, 0, 0, 0.51); */
@@ -62,7 +62,7 @@
 
   .secCaption {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%); 
     /* background-color: rgba(0, 0, 0, 0.7); */
