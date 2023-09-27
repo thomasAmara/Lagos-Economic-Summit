@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Text,
-  Image,
-  Button,
-  SimpleGrid,
-  Divider,
-} from "@chakra-ui/react";
+import { Box, Text, Image, Button, SimpleGrid } from "@chakra-ui/react";
 import Bolt from "../Assets/Bolts.png";
 import Lady from "../Assets/speaker3.jpeg";
 import Footer from "../Components/Footer";
