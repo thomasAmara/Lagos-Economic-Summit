@@ -1,95 +1,140 @@
 import React from "react";
 import "../Styles/BookNow.css";
-import Speaker from "../Assets/speaker2.jpeg";
-import { Box, Image, Button, SimpleGrid } from "@chakra-ui/react";
+import Speaker from "../Assets/ladySpeaker.jpeg";
+import { Box, Image, Button, SimpleGrid, Text } from "@chakra-ui/react";
+import Footer from "../Components/Footer";
 
 export default function Book() {
   const profile = [
     {
       name: "Early Bird Ticket",
-      price: "500",
+      price: "350",
     },
     {
-      name: "Early Bird Ticket",
-      price: "500",
+      name: "3 Ticket for the price of 2",
+      price: "700",
     },
     {
-      name: "Early Bird Ticket",
-      price: "500",
+      name: "5 Ticket for the price of 3",
+      price: "1050",
     },
   ];
 
   return (
-    <div className="bookContainer">
-      <div className="backgroundImage">
+    <div className='bookContainer'>
+      <div className='backgroundImage'>
         <text
           style={{
-            fontSize: "70px",
+            fontSize: "128px",
             fontWeight: "900",
           }}
         >
           LCS 2023
         </text>
-        <text fontWeight="500" fontSize="48px">
+        <Text textTransform='uppercase' fontWeight='500' fontSize='48px'>
           Lagos Climate Summit
-        </text>
+        </Text>
       </div>
-      <Box margin='0 auto' className="topContainer">
-        <SimpleGrid
-          columns={[2, null, 3]}
-          width="100%"
-          minChildWidth="320px"
-          spacing="30px"
-        >
-          {profile.map((item, index) => (
-            <Box
-              key={index}
-              border="2px"
-              borderColor="#0F3879"
-              borderTopRadius="35px"
-            >
-              <div className="profileHeader">{item.name}</div>
-              <div className="detailsContainer">
-                <div className="priceText">{item.price}</div>
-                <div className="vat">Exclude Vat</div>
-                <div className="buttonContainer">
-                  <Button colorScheme="facebook" variant="outline">
-                    Book Now
-                  </Button>
-                  {/* <button className="bookButton"></button> */}
+      <Box margin='0 auto' className='topContainer'>
+        <Box py='30px' width='100%'>
+          <SimpleGrid
+            columns={[2, null, 3]}
+            width='100%'
+            minChildWidth='320px'
+            spacing='30px'
+          >
+            {profile.map((item, index) => (
+              <Box
+                key={index}
+                border='2px'
+                borderColor='#3E5F93 '
+                borderTopRadius='32px'
+                borderBottomRadius='28px'
+              >
+                <div className='profileHeader'>{item.name}</div>
+                <div className='detailsContainer'>
+                  <div className='priceText'>{item.price}</div>
+                  <div className='vat'>Exclude Vat</div>
+                  <div className='buttonContainer'>
+                    <Button
+                      colorScheme='facebook'
+                      border='2px'
+                      maxWidth='130px'
+                      width='100%'
+                      variant='outline'
+                    >
+                      Book Now
+                    </Button>
+                    {/* <button className="bookButton"></button> */}
+                  </div>
                 </div>
-              </div>
-            </Box>
-          ))}
-        </SimpleGrid>
+              </Box>
+            ))}
+          </SimpleGrid>
+        </Box>
       </Box>
-      <Box margin='0 auto' className="midContainer">
-        <div className="delegateText">
-          <text className="delegate">Delegate rate includes:</text>
-          {Text.map((item, index) => (
+      <Box margin='0 auto' className='midContainer'>
+        <div className='delegateText'>
+          <text className='delegate'>Delegate rate includes:</text>
+          {Pext.map((item, index) => (
             <li>{item.name}</li>
           ))}
         </div>
       </Box>
-      <Box display='flex' margin='0 auto' justifyContent='flex-start' width='100%' maxWidth='1280px'>
-      <div className="helpContainer">
-        <Box width="300px" height="300px" border="2px">
-          <Image src={Speaker} width="100%" height="100%" alt="adanian" />
+      <Box
+        py='30px'
+        px='20px'
+        display='flex'
+        flexDirection={["column", "row"]}
+        alignItems='center'
+        className='helpSection'
+        width='100%'
+        margin='0 auto'
+        maxWidth='1280px'
+      >
+        <Box
+          width='100%'
+          maxWidth='300px'
+          border='2px solid #0F3879'
+          height='300px'
+        >
+          <Image width='100%' height='100%' src={Speaker} alt='' />
         </Box>
-        <Box border='5px'>
-          <Box>NEED HELP?</Box>
-          <Box>
-            <text>+ 234-900 000 0000</text>
-            <text>+ 234-800 000 0000</text>
+        <Box
+          display='flex'
+          flexDirection='column'
+          alignItems='flex-start
+        '
+        >
+          <Box px={["0px", "20px"]} py='10px'>
+            <Text fontStyle='600' fontSize='20px'>
+              Need help for Sponsorship Opportunities Contact
+            </Text>
+          </Box>
+
+          <Box
+            px={["0px", "20px"]}
+            py='10px'
+            display='flex'
+            flexDirection='column'
+            color='#0F3879'
+            justifyContent='flex-start'
+          >
+            <Text fontWeight='400' fontSize='18px'>
+              + 234-900 000 0000
+            </Text>
+            <Text fontWeight='400' fontSize='18px'>
+              + 234-800 000 0000
+            </Text>
           </Box>
         </Box>
-      </div>
       </Box>
+      <Footer />
     </div>
   );
 }
 
-const Text = [
+const Pext = [
   {
     name: "Access to all conference sessions",
   },
