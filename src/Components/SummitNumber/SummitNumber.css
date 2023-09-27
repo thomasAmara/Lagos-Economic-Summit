@@ -8,7 +8,7 @@
     display: flex;
     margin: auto;
     align-items: center;
-    /* gap: 7px; */
+    gap: 12px;
     justify-content: center;
 }
 @media (max-width: 768px){
@@ -22,3 +22,37 @@
         flex-direction: column;
     }
 }
+
+
+
+.new-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 170px;
+    width: 170px;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+.new-card img{
+    height: 50px;
+    width: 50px;
+}
+.new-card span{
+    color: #0F3879;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 3px;
+}
+.new-card p{
+    text-align: center;
+}
+/* .new-card h5{
+    color: ;
+    font-size: ;
+    font-weight: ;
+} */
