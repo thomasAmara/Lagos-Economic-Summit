@@ -83,11 +83,11 @@ function AboutUs() {
     return cards.slice(startIndex, endIndex).map((content, index) => (
       <div className='card' key={index}>
         <p>{content.text}</p>
-        <Rating
+        {/* <Rating
           name='simple-controlled'
           value={content.rank}
           style={{ marginTop: "12px" }}
-        />
+        /> */}
         <p>{content.name}</p>
         <p>{content.job}</p>
       </div>
