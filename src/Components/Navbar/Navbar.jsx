@@ -16,7 +16,6 @@ export default function Navbar() {
         </Link>
         <div className='navbar-pages'>
           <Link to='/AboutUs'>About Us</Link>
-          <Link>Agenda</Link>
           <div className='navbar-svg'>
             <Link to='/Speakers'>Speakers</Link>
             <BiSolidDownArrow size={10} />

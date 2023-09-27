@@ -1,7 +1,12 @@
-import { Box, SimpleGrid, Image, Divider, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import Lady from "../Assets/speaker3.jpeg";
 import Guest from "../Assets/speaker4.jpeg";
+import maleSpeaker from "../Assets/maleSpeaker.jpeg";
+import ladySpeaker from "../Assets/ladySpeaker.jpeg";
+import Killian from "../Assets/Killian.svg";
+import { ColoredLine } from "../Components/Colorline";
+import Footer from "../Components/Footer";
 
 export default function Speaker() {
   return (
@@ -14,10 +19,22 @@ export default function Speaker() {
           p='20px'
           alignContent='center'
         >
-          <Text fontSize='20px' alignItems='center' fontWeight='600'>
-            Speakers
-          </Text>
-          <Divider color='#0F3879' />
+          <Box
+            width='50%'
+            display='flex'
+            flexDirection='column'
+            justifyContent='center'
+            p='10px'
+            mb='20px'
+            alignItems='center'
+            margin='0 auto'
+            cursor='pointer'
+          >
+            <Text fontSize='20px' alignItems='center' fontWeight='600'>
+              Speakers
+            </Text>
+            <ColoredLine color='#0F3879' />
+          </Box>
         </Box>
         <SimpleGrid minChildWidth='200px' spacing='20px'>
           {peakers.map((item, index) => (
@@ -41,6 +58,7 @@ export default function Speaker() {
           ))}
         </SimpleGrid>
       </Box>
+      <Footer />
     </div>
   );
 }
@@ -49,7 +67,13 @@ const peakers = [
     imageURL: Lady,
   },
   {
+    imageURL: Killian,
+  },
+  {
     imageURL: Guest,
+  },
+  {
+    imageURL: maleSpeaker,
   },
   {
     imageURL: Guest,
@@ -58,19 +82,13 @@ const peakers = [
     imageURL: Lady,
   },
   {
-    imageURL: Guest,
+    imageURL: ladySpeaker,
   },
   {
     imageURL: Lady,
   },
   {
-    imageURL: Lady,
-  },
-  {
-    imageURL: Lady,
-  },
-  {
-    imageURL: Guest,
+    imageURL: Killian,
   },
   {
     imageURL: Guest,
