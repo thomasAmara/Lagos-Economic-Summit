@@ -42,12 +42,12 @@ h2{
 }
 
 .left-rectangle {
-  width: 50%;
+  width: 45%;
   height: 50px;
   position: absolute;
   z-index: 90;
   height: 192px;
-  top: 30%;
+  top: 32%;
   /* background-color: white; */
 }
 
