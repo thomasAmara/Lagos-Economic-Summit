@@ -7,6 +7,7 @@ import ladySpeaker from "../Assets/ladySpeaker.jpeg";
 import Killian from "../Assets/Killian.svg";
 import { ColoredLine } from "../Components/Colorline";
 import Footer from "../Components/Footer";
+import Map from "../Components/MapSection";
 
 export default function Speaker() {
   return (
@@ -58,6 +59,7 @@ export default function Speaker() {
           ))}
         </SimpleGrid>
       </Box>
+      <Map />
       <Footer />
     </div>
   );
