@@ -78,7 +78,9 @@
     gap: 12px;
     margin-top: 8px;
 }
-
+.iconlink:hover{
+    color: #154796;
+}
 
 .info-tel, .info-img{
     margin-top: 35px
