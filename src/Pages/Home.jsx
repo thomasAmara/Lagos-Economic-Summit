@@ -1,17 +1,13 @@
-import React  from 'react';
-import '../Pages/Home.css'
-import Print from '../Assets/leave.png'
-import TextTruncate from '../Components/Truncate';
-import Footer from '../Components/Footer';
-import SpeakerOutput from '../Components/SpeakerOutput/SpeakerOutput';
+import React from "react";
+import "../Pages/Home.css";
+import Print from "../Assets/leave.png";
+import TextTruncate from "../Components/Truncate";
+import SpeakerOutput from "../Components/SpeakerOutput/SpeakerOutput";
 // import SummitOutput from '../Components/SummitNumber/SummitNumber'
-import SummitNumber from '../Components/SummitNumber/SummitNumber';
-import Hero from '../Components/Hero/Hero'
+import SummitNumber from "../Components/SummitNumber/SummitNumber";
+import Hero from "../Components/Hero/Hero";
 
 function Home() {
-
-
-
   const longText = `The Lagos Climate Summit 2023, themed "Innovating for a Resilient Future: Youth Empowerment and SME Resilience in Climate Action."
 
   The Lagos Climate Summit 2023 - LCS2023 is not merely a conference; it stands as the convergence of visionary minds, impassioned leaders, and pioneers of transformative change. Rooted in the commitment to combat climate change through the catalytic potency of Artificial Intelligence (AI), our focus zeroes in on two crucial pillars: 
@@ -30,39 +26,40 @@ function Home() {
   Welcome to the Lagos Climate Summit 2023, where ideas ascend, solutions are conceived, and a better future dawns.`;
 
   return (
-    <div className="universal-container">
+    <div className='universal-container'>
       <Hero />
-   
 
-    <div className='screen-two'>
-      <p className='eko'>EKO City Summit 2023</p>
+      <div className='screen-two'>
+        <p className='eko'>EKO City Summit 2023</p>
 
-    <div className="screenTwo-content">
-
-        <div className="sc2-text">
-        <TextTruncate text={longText} maxLength={525} />
-        </div>
-
-        <div className="sc2-image">
-          <div className="footprint">
-          <img src={Print} className='print' alt="carbon print" 
-          style={{margin: 'auto'}}/>
+        <div className='screenTwo-content'>
+          <div className='sc2-text'>
+            <TextTruncate text={longText} maxLength={525} />
           </div>
-        </div>
+
+          <div className='sc2-image'>
+            <div className='footprint'>
+              <img
+                src={Print}
+                className='print'
+                alt='carbon print'
+                style={{ margin: "auto" }}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="summit-section">
+      <div className='summit-section'>
         <SummitNumber />
       </div>
 
       {/* SPEAKERS SECTION */}
-      <div style={{padding: '25px 0'}}>
+      <div style={{ padding: "25px 0" }}>
         <SpeakerOutput />
       </div>
-      <Footer />
     </div>
-  )
+  );
 }
 // >>>>>>>>> Temporary merge branch 2
 
