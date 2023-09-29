@@ -130,7 +130,6 @@ export default function Book() {
             </Box>
           </Box>
         </Box>
-        <Footer />
       </Box>
     </div>
   );
