@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FootPrint from "../Assets/leave.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Rating from "@mui/material/Rating";
+// import Rating from "@mui/material/Rating";
 import Killian from "../Assets/Killian.svg";
 import Speakers from "../Components/Speakers";
 import "./AboutUs.css";
