@@ -6,6 +6,8 @@ import SpeakerOutput from "../Components/SpeakerOutput/SpeakerOutput";
 // import SummitOutput from '../Components/SummitNumber/SummitNumber'
 import SummitNumber from "../Components/SummitNumber/SummitNumber";
 import Hero from "../Components/Hero/Hero";
+// import Blog from './Blog/Blog'
+// import FAQ from './FAQ/FAQ'
 
 function Home() {
   const longText = `The Lagos Climate Summit 2023, themed "Innovating for a Resilient Future: Youth Empowerment and SME Resilience in Climate Action."
