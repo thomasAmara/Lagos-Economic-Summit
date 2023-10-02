@@ -39,13 +39,13 @@ const SlidingContentBackground = () => {
 
                 <div className="bottom">
                     <div className="date">
-                        <h4>Date:</h4>
-                        <p style={{color: 'black', fontWeight: '500', textAlign: 'left'}}>Monday 13th of November 2023.</p>
+                        <h4 style={{fontSize: '16px', fontWeight: '600'}}>Date:</h4>
+                        <p style={{color: 'black', fontWeight: '600', textAlign: 'left'}}>Monday 13th of November 2023.</p>
                     </div>
 
                     <div className="venue">
-                        <h4>Venue:</h4>
-                        <p style={{color: 'black', fontWeight: '500', textAlign: 'left'}}>Eko Hotel and Suites, Victoria Island, Lagos.</p>
+                        <h4 style={{fontSize: '16px', fontWeight: '600'}}>Venue:</h4>
+                        <p style={{color: 'black', fontWeight: '600', textAlign: 'left'}}>Eko Hotel and Suites, Victoria Island, Lagos.</p>
                     </div>
                 </div>
             </div>
