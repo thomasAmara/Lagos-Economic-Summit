@@ -38,6 +38,7 @@ export default function Navbar() {
               to='./BookNow'
               style={{
                 color: "#FFF",
+                fontSize: "18px",
               }}
             >
               Book Now

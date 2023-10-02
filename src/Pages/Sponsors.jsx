@@ -120,7 +120,11 @@ export default function Sponsors() {
               <ColoredLine color='#0F3879' />
             </Box>
 
-            <SimpleGrid minChildWidth={["120px", "150px"]} spacing='30px'>
+            <SimpleGrid
+              minChildWidth={["120px", "150px"]}
+              mt='20px'
+              spacing='30px'
+            >
               {Sponsor.map((item, index) => (
                 <Box
                   key={index}
@@ -193,7 +197,8 @@ export default function Sponsors() {
               justifyContent='center'
               flexDirection='column'
               p='10px'
-              mb='20px'
+              py='10px'
+              mb='40px'
               alignItems='center'
               margin='0 auto'
             >
@@ -203,7 +208,11 @@ export default function Sponsors() {
               <ColoredLine color='#0F3879' />
             </Box>
 
-            <SimpleGrid minChildWidth={["120px", "150px"]} spacing='30px'>
+            <SimpleGrid
+              minChildWidth={["120px", "150px"]}
+              mt='20px'
+              spacing='30px'
+            >
               {Sponsor.map((item, index) => (
                 <Box
                   key={index}
@@ -248,7 +257,7 @@ export default function Sponsors() {
               mb='20px'
               alignItems='center'
               margin='0 auto'
-              mt='5%'
+              mt='2%'
             >
               <Button
                 maxWidth='240px'
