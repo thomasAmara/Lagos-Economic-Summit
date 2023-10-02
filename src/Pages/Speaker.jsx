@@ -51,7 +51,7 @@ export default function Speaker() {
             <Box
               key={index}
               minHeight='150px'
-              maxWidth='250px'
+              // maxWidth='250px'
               width='100%'
               display='flex'
               alignItems='center'
@@ -75,7 +75,7 @@ export default function Speaker() {
               />
               <div
                 className={`caption ${
-                  isHovered === index ? "overlay-visible" : ""
+                  isHovered === index ? "caption-visible" : ""
                 }`}
               >
                 {item.caption}
@@ -99,24 +99,31 @@ const peakers = [
   },
   {
     imageURL: Guest,
+    caption: "Guest Speaker",
   },
   {
     imageURL: maleSpeaker,
+    caption: "Developer",
   },
   {
     imageURL: Guest,
+    caption: "Guest Speaker",
   },
   {
     imageURL: Lady,
+    caption: "Intern",
   },
   {
     imageURL: ladySpeaker,
+    caption: "Guest Speaker",
   },
   {
     imageURL: Lady,
+    caption: "Intern",
   },
   {
     imageURL: Killian,
+    caption: "Killian",
   },
   {
     imageURL: Guest,
