@@ -19,22 +19,28 @@ export default function Navbar() {
           <Link to='/AboutUs'>About Us</Link>
           <div className='navbar-svg'>
             <Link to='/Speakers'>Speakers</Link>
-            <BiSolidDownArrow size={10} color="#0F3879"/>
+            <BiSolidDownArrow size={10} color='#0F3879' />
           </div>
           <div className='navbar-svg'>
             <Link to='/Sponsors'>Sponsors</Link>
-            <BiSolidDownArrow size={10} color="#0F3879"/>
+            <BiSolidDownArrow size={10} color='#0F3879' />
           </div>
           <div className='navbar-svg'>
             <Link to='/FAQ'>Summit FAQ</Link>
-            <BiSolidDownArrow size={10} color="#0F3879"/>
+            <BiSolidDownArrow size={10} color='#0F3879' />
           </div>
           <Link to='/Blog'>Blogs</Link>
           <Link>Gallery</Link>
         </div>
         <div className='book-now'>
           <button>
-            <Link to='./BookNow'>
+            <Link
+              to='./BookNow'
+              style={{
+                color: "#FFF",
+                fontSize: "18px",
+              }}
+            >
               Book Now
             </Link>
           </button>
@@ -42,9 +48,23 @@ export default function Navbar() {
       </div>
       <div className='nav-btn'>
         <button>
-          <Link to=''>Book Today</Link>
+          <Link
+            to='/BookNow'
+            style={{
+              color: "#FFF",
+              fontSize: "18px",
+            }}
+          >
+            Book Today
+          </Link>
         </button>
-        <button>Sponsor Enquiry</button>
+        <button
+          style={{
+            fontSize: "16px",
+          }}
+        >
+          Sponsor Enquiry
+        </button>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React from "react";
 import "../Styles/BookNow.css";
 import Speaker from "../Assets/ladySpeaker.jpeg";
 import { Box, Image, Button, SimpleGrid, Text } from "@chakra-ui/react";
-import Footer from "../Components/Footer";
 
 export default function Book() {
   const profile = [
@@ -130,7 +129,6 @@ export default function Book() {
             </Box>
           </Box>
         </Box>
-        <Footer />
       </Box>
     </div>
   );
