@@ -6,8 +6,9 @@ import SpeakerOutput from "../Components/SpeakerOutput/SpeakerOutput";
 // import SummitOutput from '../Components/SummitNumber/SummitNumber'
 import SummitNumber from '../Components/SummitNumber/SummitNumber';
 import Hero from '../Components/Hero/Hero'
-// import Blog from './Blog/Blog'
-// import FAQ from './FAQ/FAQ'
+// import Footer from '../Components/Footer'
+import Blog from './Blog/Blog'
+import FAQ from './FAQ/FAQ'
 
 
 function Home() {
@@ -63,17 +64,17 @@ function Home() {
       </div>
 
 
-      {/* <div style={{padding: '30px 0'}}>
+      <div style={{padding: '30px 0'}}>
         <Blog />
-      </div> */}
+      </div>
 
 
-      {/* <div style={{padding: '30px 0'}}>
+      <div style={{padding: '30px 0'}}>
         <FAQ />
-      </div> */}
+      </div> 
 
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
