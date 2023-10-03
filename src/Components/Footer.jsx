@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import './Footer.css'
-import Powered from '../Assets/Frame 3901.png'
+import Adanian from '../Assets/Adanian.png'
 import {AiFillMail,
         AiOutlineTwitter,
         AiOutlineInstagram,
         AiFillLinkedin} from 'react-icons/ai'
-import {FaFacebookF} from 'react-icons/fa'
+import {BiLogoFacebook} from 'react-icons/bi'
 
 const Footer = () => {
 return (
@@ -18,8 +18,19 @@ return (
                 <p>Lekki phase 1, Lagos. Nigeria.</p>
 
 
+
+
+               
                 <div className='info-img' style={{justifyContent: 'flex-start'}}>
-                <img src={Powered} alt="Adanian" />
+                    <div className="adanianlogo" style={{display: 'flex', gap: '10px'}}>
+                        <p>Powered by</p>
+                    <img src={Adanian} alt="Adanian" />
+                    </div>
+                
+
+
+
+
             </div>
             </div>
             <div className="detail-right deets" style={{display: 'flex', flexDirection: 'column'}}>
@@ -51,19 +62,19 @@ return (
             <div className='foot-icon'>
 
             <a href="/" class="iconlink" target="_blank" rel='noreferrer'>
-            <AiFillMail />
+            <AiFillMail size={20}/>
             </a>
             <a href="/" class="iconlink" target="_blank" rel='noreferrer'>
-            <FaFacebookF />
+            <BiLogoFacebook size={20}/>
             </a>
             <a href="https://twitter.com/OfficialApata" class="iconlink" target="_blank" rel='noreferrer'>
-            <AiOutlineTwitter />
+            <AiOutlineTwitter size={20}/>
             </a>
             <a href="/" class="iconlink" target="_blank" rel='noreferrer'>
-            <AiOutlineInstagram />
+            <AiOutlineInstagram size={20}/>
             </a>
             <a href="/" class="iconlink" target="_blank">
-            <AiFillLinkedin />
+            <AiFillLinkedin size={20}/>
             </a>
             </div>
         </div>

@@ -89,9 +89,10 @@
     }
   
 .summit-info h2{
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: 6rem;
+    font-weight: 800;
     color: #fff;
+    line-height: normal;
 }
 @media (max-width: 768px) {
     .summit-info h2{
@@ -99,7 +100,7 @@
     }
 }
 .summit-info span{
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 400;
 }
 @media (max-width: 768px) {
@@ -131,7 +132,7 @@
 }
 .top p{
     line-height: 1.5;
-    letter-spacing: 6px;
+    letter-spacing: 9px;
     margin: auto;
     font-size: 18px;
     color: #fff;
