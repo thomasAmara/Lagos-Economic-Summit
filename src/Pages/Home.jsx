@@ -70,7 +70,10 @@ function Home() {
 
 
       <div style={{padding: '30px 0'}}>
-        <FAQ />
+        <div style={{position: 'relative'}}>
+        <FAQ/>
+        </div>
+      
       </div> 
 
 
