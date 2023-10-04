@@ -4,10 +4,12 @@ import Print from "../Assets/leave.png";
 import TextTruncate from "../Components/Truncate";
 import SpeakerOutput from "../Components/SpeakerOutput/SpeakerOutput";
 // import SummitOutput from '../Components/SummitNumber/SummitNumber'
-import SummitNumber from "../Components/SummitNumber/SummitNumber";
-import Hero from "../Components/Hero/Hero";
-// import Blog from './Blog/Blog'
-// import FAQ from './FAQ/FAQ'
+import SummitNumber from '../Components/SummitNumber/SummitNumber';
+import Hero from '../Components/Hero/Hero'
+// import Footer from '../Components/Footer'
+import Blog from './Blog/Blog'
+import FAQ from './FAQ/FAQ'
+
 
 function Home() {
   const longText = `The Lagos Climate Summit 2023, themed "Innovating for a Resilient Future: Youth Empowerment and SME Resilience in Climate Action."
@@ -60,9 +62,24 @@ function Home() {
       <div style={{ padding: "25px 0" }}>
         <SpeakerOutput />
       </div>
+
+
+      <div style={{padding: '30px 0'}}>
+        <Blog />
+      </div>
+
+
+      <div style={{padding: '30px 0'}}>
+        <div style={{position: 'relative'}}>
+        <FAQ/>
+        </div>
+      
+      </div> 
+
+
+      {/* <Footer /> */}
     </div>
   );
 }
-// >>>>>>>>> Temporary merge branch 2
 
 export default Home;
