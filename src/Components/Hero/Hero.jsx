@@ -5,7 +5,8 @@ import React from 'react';
 import './Hero.css';
 
 import image1 from '../../Assets/Background.png'; 
-import image2 from '../../Assets/Background2.png'; 
+// import image2 from '../../Assets/Background2.png'; 
+import image2 from '../../Assets/bg3.png'; 
 import image3 from '../../Assets/background3.png'; 
 // import image4 from '../../Assets/Background4.png'; 
 

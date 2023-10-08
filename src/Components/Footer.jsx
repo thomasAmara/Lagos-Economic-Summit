@@ -7,6 +7,10 @@ import {AiFillMail,
         AiOutlineInstagram,
         AiFillLinkedin} from 'react-icons/ai'
 import {BiLogoFacebook} from 'react-icons/bi'
+// import {HiOutlineMail} from 'react-icon/hi'
+import {BsFillTelephoneOutboundFill} from 'react-icons/bs'
+import {IoMdMail} from 'react-icons/io'
+
 
 const Footer = () => {
 return (
@@ -39,7 +43,15 @@ return (
                 <p>Victoria Island 106104, Lagos</p>
 
                 <div className='info-tel' style={{justifyContent: 'flex-start'}}>
-                <p style={{ textAlign: 'left', color: '#0F3879' }}>+234 706 728 1296</p>
+                <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+                    <BsFillTelephoneOutboundFill  style={{color: '#0F3879'}}/>
+                    <p style={{ textAlign: 'left', color: '#0F3879' }}>+234 706 728 1296</p>
+                </div>
+               
+                <div style={{display: 'flex', alignItems: 'center', gap: '10px', marginTop: '10px'}}>
+                    <IoMdMail size={20} style={{color: '#0F3879'}}/>
+                    <p style={{ textAlign: 'left', color: '#0F3879' }}>+234 706 728 1296</p>
+                </div>
             </div>
             </div>
         </div>

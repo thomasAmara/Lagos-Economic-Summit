@@ -13,52 +13,79 @@ const SpeakerOutput = () => {
           alt="Image 1 Alt Text"
           caption='Killian Mayua'
           secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
         /> 
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
-        <Speakers
-          src={Killian}
-          alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
          <Speakers
           src={Killian}
           alt="Image 1 Alt Text"
-          caption="Killian Mayua"
-        />
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+        <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+        <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+        <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+        <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+        <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+        <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+         {/* <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        /> 
+
+         <Speakers
+          src={Killian}
+          alt="Image 1 Alt Text"
+          caption='Killian Mayua'
+          secCaption="Country Head, Adanian Labs NG"
+          linkurl='https://www.linkedin.com/in/prince-killian-mayua-bb919838/'
+        />  */}
         </div>
         </div>
   )

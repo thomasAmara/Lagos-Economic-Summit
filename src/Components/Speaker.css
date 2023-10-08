@@ -40,7 +40,7 @@
 
   .caption {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%); 
     /* background-color: rgba(0, 0, 0, 0.51); */
@@ -50,6 +50,11 @@
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 12px;
+    text-transform: uppercase;
+  }
+  a:hover{
+      color: #fff;
+      text-decoration: underline;
   }
   
   
@@ -76,8 +81,8 @@
   opacity: 1;
 }
 .image-container {
-  width: 16%;
-  height: 30%;
+  width: 20%;
+  /* height: 30%; */
   object-fit: cover;
   display: flex;
   justify-content: center;
