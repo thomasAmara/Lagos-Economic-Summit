@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Speaker.css";
-import { FiArrowUpRight } from 'react-icons/fi'
+
 
 const ImageWithCaption = ({ src, alt, caption, secCaption, linkurl}) => {
   const [isHovered, setIsHovered] = useState(false);
