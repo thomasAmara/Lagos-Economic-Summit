@@ -36,7 +36,7 @@ const ImageWithCaption = ({ src, alt, caption, secCaption, linkurl}) => {
   <img src={src} alt={alt} className="image" />
   <div className={`overlay ${isHovered ? "overlay-visible" : ""}`} />
   <div className={`caption ${isHovered ? "overlay-visible" : ""}`}>
-    <a href={linkurl} target="_blank" style={{display: 'flex', alignItems: 'center'}}>
+    <a href={linkurl} target="_blank" rel="noreferrer" style={{display: 'flex', alignItems: 'center'}}>
     {caption}
     </a>
   </div>
@@ -44,8 +44,6 @@ const ImageWithCaption = ({ src, alt, caption, secCaption, linkurl}) => {
     {secCaption}
   </div>
 </div>
-
-
 
   );
 };
