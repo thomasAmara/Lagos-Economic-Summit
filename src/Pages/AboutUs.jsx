@@ -207,8 +207,9 @@ function AboutUs() {
       </div>
 
       {/* Speaker */}
-
+      <div className="speaker-container">
       <SpeakerOutput />
+      </div>
 
       {/* <div className='speaker-container'>
         <div className='speaker-wrap'>

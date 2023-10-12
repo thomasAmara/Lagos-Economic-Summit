@@ -240,3 +240,18 @@
     margin-top: 40px;
   }
 }
+
+
+.speaker-container{
+  width: 100%;
+  padding: 40px 0;
+}
+.topic{
+  margin: auto;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 2px solid;
+  border-color: #0F3879;
+  width: fit-content;
+  text-align: center;
+}
