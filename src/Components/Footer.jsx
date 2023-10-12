@@ -14,6 +14,7 @@ import {IoMdMail} from 'react-icons/io'
 
 const Footer = () => {
 return (
+    <div className="footer-container">
     <div className='footer'>
         <div className='detail'>
             <div className="detail-left deets" style={{display: 'flex', flexDirection: 'column'}}>
@@ -90,6 +91,7 @@ return (
             </a>
             </div>
         </div>
+    </div>
     </div>
   )
 }

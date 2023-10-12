@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import FootPrint from "../Assets/leave.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import Rating from "@mui/material/Rating";
-import Killian from "../Assets/Killian.svg";
-import Speakers from "../Components/Speakers";
+// import Killian from "../Assets/Killian.svg";
+// import Speakers from "../Components/Speakers";
 import "./AboutUs.css";
 import lsc from "../Assets/LSC.png";
 import map from "../Assets/Map.png";
+import SpeakerOutput from "../Components/SpeakerOutput/SpeakerOutput";
 
 function AboutUs() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -206,8 +207,11 @@ function AboutUs() {
       </div>
 
       {/* Speaker */}
+      <div className="speaker-container">
+      <SpeakerOutput />
+      </div>
 
-      <div className='speaker-container'>
+      {/* <div className='speaker-container'>
         <div className='speaker-wrap'>
           <p style={{ textAlign: "center" }} className='eko'>
             SPEAKERS
@@ -261,7 +265,7 @@ function AboutUs() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Map */}
       <div className='map-container'>
