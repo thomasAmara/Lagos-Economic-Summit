@@ -29,7 +29,7 @@ img {
 }
 
 a:hover {
-  color: red;
+  color: #0f3879;
 }
 
 .navbar-svg {
@@ -52,7 +52,6 @@ a:hover {
 }
 
 .book-now button:hover {
-  background-color: #154796;
   color: #0f3879;
   border: 1px solid #0f3879;
 }
