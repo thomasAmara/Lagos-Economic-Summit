@@ -26,7 +26,7 @@ const SummitNumber = () => {
             <div className="new-card">
                 <img src={people} alt="" />
                 <div>
-                    <p><span>402+</span>industry attendees</p>
+                    <p><span>120+</span>industry attendees</p>
                 </div>
             </div>
         </div>
