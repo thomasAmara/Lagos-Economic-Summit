@@ -1,7 +1,13 @@
 import React from "react";
 import { Box, Text, Image, Button, SimpleGrid } from "@chakra-ui/react";
-import Bolt from "../Assets/Bolts.png";
+// import Bolt from "../Assets/Bolts.png";
+import US from "../Assets/USMission.png";
+import Agra from "../Assets/AGRA.png";
+import Aice from "../Assets/AICE.png";
+import Eco from "../Assets/ECO.jpeg";
+import Afya from "../Assets/AfyaRekod.jpeg";
 import Lady from "../Assets/speaker3.jpeg";
+import GE from "../Assets/GE.jpeg";
 import { ColoredLine } from "../Components/Colorline";
 
 export default function Sponsors() {
@@ -34,7 +40,7 @@ export default function Sponsors() {
             </Box>
 
             <SimpleGrid
-              minChildWidth={["120px", "150px"]}
+              minChildWidth={["120px", "180px"]}
               mt='20px'
               spacing='30px'
             >
@@ -50,7 +56,7 @@ export default function Sponsors() {
                   borderRadius='6px'
                   bg='#FFF'
                   boxShadow='2px 3px 5px 0px rgba(0,0,0,0.75)'
-                  p='30px'
+                  p='20px'
                   color='#FFF'
                   justifyContent='center'
                   style={{
@@ -67,7 +73,7 @@ export default function Sponsors() {
                   <Image
                     src={item.imageURL}
                     width={["90%", "95%", "99%"]}
-                    height='100%'
+                    // height='100%'
                     alt=''
                   />
                 </Box>
@@ -154,7 +160,7 @@ export default function Sponsors() {
                   <Image
                     src={item.imageURL}
                     width={["90%", "95%", "99%"]}
-                    height='100%'
+                    // height='100%'
                     alt=''
                   />
                 </Box>
@@ -213,7 +219,7 @@ export default function Sponsors() {
               mt='20px'
               spacing='30px'
             >
-              {Sponsor.map((item, index) => (
+              {Partner.map((item, index) => (
                 <Box
                   key={index}
                   minHeight='150px'
@@ -242,7 +248,7 @@ export default function Sponsors() {
                   <Image
                     src={item.imageURL}
                     width={["90%", "95%", "99%"]}
-                    height='100%'
+                    // height='100%'
                     alt=''
                   />
                 </Box>
@@ -329,31 +335,56 @@ const Sponsor = [
   {
     name: "Early Bird Ticket",
     price: "500",
-    imageURL: Bolt,
+    imageURL: Agra,
   },
   {
     name: "Early Bird Ticket",
     price: "500",
-    imageURL: Bolt,
+    imageURL: Aice,
   },
   {
     name: "Early Bird Ticket",
     price: "500",
-    imageURL: Bolt,
+    imageURL: US,
   },
   {
     name: "Early Bird Ticket",
     price: "500",
-    imageURL: Bolt,
+    imageURL: Eco,
   },
   {
     name: "Early Bird Ticket",
     price: "500",
-    imageURL: Bolt,
+    imageURL: Afya,
+  },
+];
+
+const Partner = [
+  {
+    name: "Early Bird Ticket",
+    price: "500",
+    imageURL: GE,
   },
   {
     name: "Early Bird Ticket",
     price: "500",
-    imageURL: Bolt,
+    imageURL: Eco,
+  },
+
+  {
+    name: "Early Bird Ticket",
+    price: "500",
+    imageURL: Afya,
+  },
+  {
+    name: "Early Bird Ticket",
+    price: "500",
+    imageURL: US,
+  },
+
+  {
+    name: "Early Bird Ticket",
+    price: "500",
+    imageURL: Agra,
   },
 ];
