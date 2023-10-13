@@ -15,6 +15,9 @@
 justify-items: center;
 margin: auto 0;
 gap: 24px;
+@media (max-width: 768px){
+    flex-direction: column;
+}
 }
 .image-section{
     display: flex;
