@@ -15,7 +15,17 @@
   justify-items: center;
   margin: auto 0;
   gap: 24px;
+  /* @media (max-width: 768px){
+    flex-direction: column;
+} */
 }
+@media (max-width: 768px) {
+  .text-section {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .image-section {
   display: flex;
   width: 45%;

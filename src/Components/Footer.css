@@ -26,8 +26,7 @@
         .detail {
             flex-direction: column-reverse;
             gap: 35px;
-            padding-right: 50px;
-
+            
         }
 }
 .info{
