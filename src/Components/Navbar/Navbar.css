@@ -2,6 +2,13 @@
   box-sizing: border-box;    
 } */
 
+.navbar sticky-navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Adjust the background color as needed */
+  z-index: 100;
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -17,7 +24,12 @@ img {
   display: flex;
   gap: 20px;
 }
-
+.navbar-pages:hover {
+  color: #0f3878;
+}
+.navbar-svg {
+  cursor: pointer;
+}
 .navbar a {
   text-decoration: none;
   font-size: 16px;
@@ -68,6 +80,12 @@ a:hover {
 .nav-btn button:nth-child(2) {
   background-color: white;
   color: #0f3879;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
