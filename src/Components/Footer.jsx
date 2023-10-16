@@ -51,7 +51,7 @@ return (
                
                 <div style={{display: 'flex', alignItems: 'center', gap: '10px', marginTop: '10px'}}>
                     <IoMdMail size={20} style={{color: '#0F3879'}}/>
-                    <p style={{ textAlign: 'left', color: '#0F3879' }}>+234 706 728 1296</p>
+                    <p style={{ textAlign: 'left', color: '#0F3879' }}>hello@lagosclimatesummit.org</p>
                 </div>
             </div>
             </div>
@@ -80,7 +80,7 @@ return (
             <a href="/" class="iconlink" target="_blank" rel='noreferrer'>
             <BiLogoFacebook size={20}/>
             </a>
-            <a href="https://twitter.com/OfficialApata" class="iconlink" target="_blank" rel='noreferrer'>
+            <a href="https://twitter.com/" class="iconlink" target="_blank" rel='noreferrer'>
             <AiOutlineTwitter size={20}/>
             </a>
             <a href="/" class="iconlink" target="_blank" rel='noreferrer'>
