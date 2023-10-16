@@ -2,9 +2,11 @@ import { Box, SimpleGrid, Image, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Lady from "../Assets/speaker3.jpeg";
 import Guest from "../Assets/speaker4.jpeg";
-import maleSpeaker from "../Assets/maleSpeaker.jpeg";
 import ladySpeaker from "../Assets/ladySpeaker.jpeg";
 import Killian from "../Assets/Killian.svg";
+// import JohnKamara from "../Assets/JohnKamaraImg.jpeg";
+import Kamara from "../Assets/johnKamara.jpeg";
+import JohnKamar from "../Assets/John_Kamara.jpeg";
 import { ColoredLine } from "../Components/Colorline";
 import Map from "../Components/MapSection";
 import "../Styles/speakerCss.css";
@@ -46,12 +48,12 @@ export default function Speaker() {
             <ColoredLine color='#0F3879' />
           </Box>
         </Box>
-        <SimpleGrid minChildWidth='200px' spacing='20px'>
+        <SimpleGrid minChildWidth='200px' spacing='70px'>
           {peakers.map((item, index) => (
             <Box
               key={index}
-              minHeight='150px'
-              maxWidth='250px'
+              // minHeight='150px'
+              // maxWidth='250px'
               width='100%'
               display='flex'
               alignItems='center'
@@ -75,7 +77,7 @@ export default function Speaker() {
               />
               <div
                 className={`caption ${
-                  isHovered === index ? "overlay-visible" : ""
+                  isHovered === index ? "caption-visible" : ""
                 }`}
               >
                 {item.caption}
@@ -90,8 +92,8 @@ export default function Speaker() {
 }
 const peakers = [
   {
-    imageURL: Lady,
-    caption: "Guest Speaker",
+    imageURL: JohnKamar,
+    caption: "John Kamara",
   },
   {
     imageURL: Killian,
@@ -99,26 +101,26 @@ const peakers = [
   },
   {
     imageURL: Guest,
+    caption: "Guest Speaker",
   },
   {
-    imageURL: maleSpeaker,
+    imageURL: Kamara,
+    caption: "Developer",
   },
   {
     imageURL: Guest,
+    caption: "Guest Speaker",
   },
   {
     imageURL: Lady,
+    caption: "Intern",
   },
   {
     imageURL: ladySpeaker,
-  },
-  {
-    imageURL: Lady,
+    caption: "Guest Speaker",
   },
   {
     imageURL: Killian,
-  },
-  {
-    imageURL: Guest,
+    caption: "Killian",
   },
 ];
