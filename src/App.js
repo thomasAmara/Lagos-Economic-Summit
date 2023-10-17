@@ -1,32 +1,43 @@
-import React, { Suspense, lazy } from "react";
+import React, { lazy } from "react";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
+import { Element } from "react-scroll";
 import Footer from "./Components/Footer";
-import Blog from "./Pages/Blog/Blog";
-const AboutUs = lazy(() => import("./Pages/AboutUs"));
-const Home = lazy(() => import("./Pages/Home"));
-const FAQ = lazy(() => import("./Pages/FAQ/FAQ"));
-const BookNow = lazy(() => import("./Pages/Book"));
+
+// const AboutUs = lazy(() => import("./Pages/AboutUs"));
+// const Home = lazy(() => import("./Pages/Home"));
 const Sponsors = lazy(() => import("./Pages/Sponsors"));
 const Speakers = lazy(() => import("./Pages/Speaker"));
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
-      <Suspense fallback={null}>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Aboutus' element={<AboutUs />} />
-          <Route path='/FAQ' element={<FAQ />} />
-          <Route path='/BookNow' element={<BookNow />} />
-          <Route path='/Sponsors' element={<Sponsors />} />
-          <Route path='/Speakers' element={<Speakers />} />
-          <Route path='/Blog' element={<Blog />} />
-        </Routes>
-      </Suspense>
-      <Footer />
+      <div style={{ position: "sticky" }}>
+        <Navbar />
+        <Element name='AboutUs'>
+          <div style={{ height: "100vh", backgroundColor: "#43E32D" }}>
+            <h1>About Us Section</h1>
+          </div>
+        </Element>
+        <Element name='Speakers'>
+          <div style={{ height: "100vh" }}>
+            <h1>Speakers Section</h1>
+            <Speakers />
+          </div>
+        </Element>
+        <Element name='Agenda'>
+          <div style={{ height: "100vh", backgroundColor: "#F3D3D2" }}>
+            <h1>Agenda Section</h1>
+          </div>
+        </Element>
+        <Element name='Sponsors'>
+          <div style={{ height: "100vh", backgroundColor: "#EEE32D" }}>
+            <h1>Sponsors Section</h1>
+            <Sponsors />
+          </div>
+        </Element>
+        <Footer />
+      </div>
     </div>
   );
 }
