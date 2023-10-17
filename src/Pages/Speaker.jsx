@@ -86,7 +86,6 @@ export default function Speaker() {
           ))}
         </SimpleGrid>
       </Box>
-      <Map />
     </div>
   );
 }
