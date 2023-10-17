@@ -8,33 +8,36 @@ import Hero from "../Components/Hero/Hero";
 import Blog from "./Blog/Blog";
 import FAQ from "./FAQ/FAQ";
 import ScreenTwo from "../Components/ScreenTwo/ScreenTwo";
+import Navbar from "../Components/Navbar/Navbar";
 
 function Home() {
   // const longText = `The Lagos Climate Summit 2023, themed "Innovating for a Resilient Future: Youth Empowerment and SME Resilience in Climate Action."
 
-  // The Lagos Climate Summit 2023 - LCS2023 is not merely a conference; it stands as the convergence of visionary minds, impassioned leaders, and pioneers of transformative change. Rooted in the commitment to combat climate change through the catalytic potency of Artificial Intelligence (AI), our focus zeroes in on two crucial pillars: 
-  // • EMPOWERING YOUTH 
+  // The Lagos Climate Summit 2023 - LCS2023 is not merely a conference; it stands as the convergence of visionary minds, impassioned leaders, and pioneers of transformative change. Rooted in the commitment to combat climate change through the catalytic potency of Artificial Intelligence (AI), our focus zeroes in on two crucial pillars:
+  // • EMPOWERING YOUTH
   // • ENHANCING SME RESILIENCE
-  
-  // The world today seeks solutions that embody inclusivity, innovation, and sustainability. This summit emerges as a distinctive platform that fosters collective action and channels real-world impact. 
-  // The urgency of climate change compels us to act purposefully and expediently. With each passing day, the repercussions of environmental degradation become more profound, underscoring the necessity for comprehensive, innovative strategies. 
-  // By centering on the vibrant engagement of youth and the potential of SMEs to instigate transformative change bolstered by AI innovations, we acknowledge that the solutions to these challenges lie within our grasp. 
-  // This summit heralds the commencement of an exhilarating journey—a journey that brings together luminous intellects, industry vanguards, scholars, entrepreneurs, and policymakers beneath one roof. 
+
+  // The world today seeks solutions that embody inclusivity, innovation, and sustainability. This summit emerges as a distinctive platform that fosters collective action and channels real-world impact.
+  // The urgency of climate change compels us to act purposefully and expediently. With each passing day, the repercussions of environmental degradation become more profound, underscoring the necessity for comprehensive, innovative strategies.
+  // By centering on the vibrant engagement of youth and the potential of SMEs to instigate transformative change bolstered by AI innovations, we acknowledge that the solutions to these challenges lie within our grasp.
+  // This summit heralds the commencement of an exhilarating journey—a journey that brings together luminous intellects, industry vanguards, scholars, entrepreneurs, and policymakers beneath one roof.
   // Together, we will unravel the intricate interplay between AI, climate action, youth leadership, and the role of SMEs in shaping a metamorphic trajectory for our world.
 
-  // The Lagos Climate Summit 2023 serves as a clarion call to action, an embodiment of our shared dedication to forging a sustainable, just, and flourishing future for all. 
-  // We invite you to join us on this extraordinary voyage of exploration, collaboration, and innovation. 
-  // Together, let's harness the potential of AI to kindle profound change, empower the previously marginalized, and steer our planet toward a brighter, more sustainable tomorrow. 
+  // The Lagos Climate Summit 2023 serves as a clarion call to action, an embodiment of our shared dedication to forging a sustainable, just, and flourishing future for all.
+  // We invite you to join us on this extraordinary voyage of exploration, collaboration, and innovation.
+  // Together, let's harness the potential of AI to kindle profound change, empower the previously marginalized, and steer our planet toward a brighter, more sustainable tomorrow.
   // Welcome to the Lagos Climate Summit 2023, where ideas ascend, solutions are conceived, and a better future dawns.`;
 
   return (
-    <div className="universal-container">
-      <Hero />
+    <div>
+      <Navbar />
+      <div className='universal-container'>
+        <Hero />
 
-      <div className="screen-two">
-         <p className="eko">EKO City Summit 2023</p>
+        <div className='screen-two'>
+          <p className='eko'>EKO City Summit 2023</p>
 
-        {/*  <div className="screenTwo-content">
+          {/*  <div className="screenTwo-content">
            <div className="sc2-text">
              <TextTruncate text={longText} maxLength={525} />
            </div>
@@ -50,25 +53,26 @@ function Home() {
             </div>
           </div>
          </div> */}
-         <ScreenTwo />
-      </div> 
+          <ScreenTwo />
+        </div>
 
-      <div className="summit-section">
-        <SummitNumber />
-      </div>
+        <div className='summit-section'>
+          <SummitNumber />
+        </div>
 
-      {/* SPEAKERS SECTION */}
-      <div style={{ padding: "25px 0" }}>
-        <SpeakerOutput />
-      </div>
+        {/* SPEAKERS SECTION */}
+        <div style={{ padding: "25px 0" }}>
+          <SpeakerOutput />
+        </div>
 
-      <div style={{ padding: "30px 0" }}>
-        <Blog />
-      </div>
+        <div style={{ padding: "30px 0" }}>
+          <Blog />
+        </div>
 
-      <div style={{ padding: "30px 0" }}>
-        <div style={{ position: "relative" }}>
-          <FAQ />
+        <div style={{ padding: "30px 0" }}>
+          <div style={{ position: "relative" }}>
+            <FAQ />
+          </div>
         </div>
       </div>
     </div>
