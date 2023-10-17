@@ -7,9 +7,6 @@ import Hero from "../Hero/Hero";
 import { Text } from "@chakra-ui/react";
 
 export default function Navbar() {
-  const handleSetActive = (to) => {
-    console.log("destination", to);
-  };
   return (
     <div className='navbar sticky-navbar'>
       <div className='navbar'>
@@ -22,11 +19,7 @@ export default function Navbar() {
           <div className='navbar-pages'>
             <div className='navbar-svg'>
               <Link to='AboutUs' smooth={true} duration={500}>
-                <Text
-                  fontSize='15px'
-                  fontWeight='600'
-                  onSetActive={handleSetActive}
-                >
+                <Text fontSize='15px' fontWeight='600'>
                   About
                 </Text>{" "}
               </Link>
@@ -34,22 +27,14 @@ export default function Navbar() {
 
             <div className='navbar-svg'>
               <Link to='Speakers' smooth={true} duration={500}>
-                <Text
-                  fontSize='15px'
-                  fontWeight='600'
-                  onSetActive={handleSetActive}
-                >
+                <Text fontSize='15px' fontWeight='600'>
                   Speakers
                 </Text>
               </Link>
             </div>
             <div className='navbar-svg'>
               <Link to='Sponsors' smooth={true} duration={500}>
-                <Text
-                  fontSize='15px'
-                  fontWeight='600'
-                  onSetActive={handleSetActive}
-                >
+                <Text fontSize='15px' fontWeight='600'>
                   Sponsors
                 </Text>
               </Link>
@@ -61,11 +46,13 @@ export default function Navbar() {
                 </Text>
               </Link>
             </div>
-            {/* <Link to='/Blog'> */}
-            <Text fontSize='15px' fontWeight='600'>
-              Practical Information
-            </Text>
-            {/* </Link> */}
+            <div className='navbar-svg'>
+              <Link to='Information' smooth={true} duration={500}>
+                <Text fontSize='15px' fontWeight='600'>
+                  Practical Information
+                </Text>
+              </Link>
+            </div>
             {/* <Link>Gallery</Link> */}
           </div>
           <div className='book-now'>
