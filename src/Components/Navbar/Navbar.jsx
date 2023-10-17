@@ -1,13 +1,10 @@
 import React from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../../src/Images/LCS 2 1 (1).svg";
-// import { Link } from "react-router-dom";
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
 // import AboutUs from "../../Pages/AboutUs";
+import Hero from "../Hero/Hero";
 import { Text } from "@chakra-ui/react";
-// import { BiRightArrowAlt } from "react-icons/bi";
-// import FAQ from "../../Pages/FAQ/FAQ";
-// import Blog from "../../Pages/Blog/Blog";
 
 export default function Navbar() {
   const handleSetActive = (to) => {
@@ -24,7 +21,7 @@ export default function Navbar() {
           </div>
           <div className='navbar-pages'>
             <div className='navbar-svg'>
-              <Link to='/AboutUs' smooth={true} duration={500}>
+              <Link to='AboutUs' smooth={true} duration={500}>
                 <Text
                   fontSize='15px'
                   fontWeight='600'
@@ -36,7 +33,7 @@ export default function Navbar() {
             </div>
 
             <div className='navbar-svg'>
-              <Link to='/Speakers' smooth={true} duration={500}>
+              <Link to='Speakers' smooth={true} duration={500}>
                 <Text
                   fontSize='15px'
                   fontWeight='600'
@@ -47,7 +44,7 @@ export default function Navbar() {
               </Link>
             </div>
             <div className='navbar-svg'>
-              <Link to='/Sponsors' smooth={true} duration={500}>
+              <Link to='Sponsors' smooth={true} duration={500}>
                 <Text
                   fontSize='15px'
                   fontWeight='600'
@@ -58,7 +55,7 @@ export default function Navbar() {
               </Link>
             </div>
             <div className='navbar-svg'>
-              <Link to='/Agenda' smooth={true} duration={500}>
+              <Link to='Agenda' smooth={true} duration={500}>
                 <Text fontSize='15px' fontWeight='600'>
                   Agenda
                 </Text>
@@ -85,33 +82,8 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        {/* <div className='nav-btn'>
-        <button>
-          <Link
-            to='/BookNow'
-            style={{
-              color: "#FFF",
-              fontSize: "18px",
-            }}
-          >
-            Book Today
-          </Link>
-        </button>
-        <button
-          style={{
-            fontSize: "16px",
-          }}
-        >
-          Sponsor Enquiry
-        </button>
-      </div> */}
-        <Element name='Aboutus'>
-          Ko test 23<div style={{ height: "60vh" }}>dfko</div>
-        </Element>
-        <Element name='Agenda' className='element'>
-          test 1<div style={{ height: "60vh" }}>dfko</div>
-        </Element>
       </div>
+      <Hero />
     </div>
   );
 }
