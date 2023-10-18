@@ -1,12 +1,11 @@
 // SlidingContentBackground.js
 import React from "react";
 import "./Hero.css";
-import image1 from "../../Assets/Background.png";
-import image2 from "../../Assets/bg3.png";
-import image3 from "../../Assets/background3.png";
-
+// import image1 from "../../Assets/Background.png";
+// import image2 from "../../Assets/bg3.png";
+// import image3 from "../../Assets/background3.png";
 // const images = [image1, image2, image3];
-const images = [image3];
+// const images = [image3];
 
 const SlidingContentBackground = () => {
   return (
@@ -26,11 +25,10 @@ const SlidingContentBackground = () => {
           // className={`background-image ${index === 0 ? "visible" : "hidden"}`}
           className='visible'
           style={{
-            backgroundImage: `url(${image2})`,
+            // backgroundImage: `url(${image2})`,
             backgroundPosition: "100% 100%",
             backgroundSize: "cover",
             // animationDuration: "24s",
-            border: "2px solid #000",
             height: "100vh",
             width: "100%",
           }}

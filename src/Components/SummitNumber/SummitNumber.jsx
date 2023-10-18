@@ -3,11 +3,11 @@ import './SummitNumber.css'
 import microphone from '../../Assets/mircrophone.svg'
 import gavel from '../../Assets/gavel.svg'
 import people from '../../Assets/people.svg'
-
-const SummitNumber = () => {
+export default function SummitNumber () {
   return (
     <div className='summit-number'>
-        <h4 className='eko' style={{color: 'black'}}>The Summit in Numbers</h4>
+        <h4 className='eko' style={{color: 'black', textAlign: 'center'}}>The Summit in Numbers</h4>
+
         <div className="box">
             <div className="new-card">
                 <img src={microphone} alt="" />
@@ -34,4 +34,4 @@ const SummitNumber = () => {
   )
 }
 
-export default SummitNumber
+// export default SummitNumber
