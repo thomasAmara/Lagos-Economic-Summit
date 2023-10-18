@@ -11,6 +11,7 @@ const Sponsors = lazy(() => import("./Pages/Sponsors"));
 const About = lazy(() => import("./Components/About/About"));
 const Summit = lazy(() => import("./Components/SummitNumber/SummitNumber"));
 const SpeakerOutput = lazy(() => import("./Components/SpeakerOutput/SpeakerOutput"));
+const Agenda = lazy(() => import("./Components/Agenda/Agenda"));
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
 
         <Element name='Agenda'>
           <div style={{ height: "100%", backgroundColor: "#F3D3D2" }}>
-            <h1>Agenda Section</h1>
+            <Agenda />
           </div>
         </Element>
 

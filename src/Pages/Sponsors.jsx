@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Text, Image, Button, SimpleGrid } from "@chakra-ui/react";
+import { Box, Text, Image, 
+  //Button, 
+  SimpleGrid } from "@chakra-ui/react";
 // import Bolt from "../Assets/Bolts.png";
 import US from "../Assets/USMission.png";
 import Agra from "../Assets/AGRA.png";
