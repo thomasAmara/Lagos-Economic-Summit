@@ -1,17 +1,17 @@
-/* Accordion Container */
+
 .accordion-container {
     width: 80%;
     margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Accordion Item */
+
   .accordion-item {
     width: 100%;
     border-top: 1px solid #ddd;
   }
   
-  /* Accordion Button */
+ 
   .accordion-button {
     width: 100%;
     display: flex;
@@ -27,18 +27,18 @@
     background-color: #e0e0e0;
   }
   
-  /* Accordion Icon */
+
   .accordion-icon {
     font-size: 24px;
     transition: transform 0.2s;
   }
-  
+ 
   
   .accordion-item.active .accordion-content {
     display: block;
   }
   
-  /* Accordion Content */
+
   .accordion-content {
     display: flex;
     padding: 20px;
