@@ -1,4 +1,4 @@
-
+/* 
 .accordion-container {
     width: 80%;
     margin: 0 auto;
@@ -22,6 +22,18 @@
     cursor: pointer;
     text-align: left;
   }
+  .info{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    margin: auto 0;
+    @media (max-width: 768px){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+  }
   
   .accordion-button:hover {
     background-color: #e0e0e0;
@@ -43,6 +55,7 @@
     display: flex;
     padding: 20px;
     background-color: #fff;
+    flex-direction: row;
   }
   
   .accordion-image {
@@ -54,4 +67,38 @@
   .accordion-text {
     flex: 1;
   }
-  
+  .accordion-time{
+    width: 90px;
+  }
+  .topic {
+    margin: auto;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-bottom: 3px solid;
+    border-color: #0f3879;
+    width: fit-content;
+    text-align: center;
+  }
+  .summit-theme{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .theme{
+    width: 80%;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    background-color: #0f3879;
+  }
+  .theme h4{
+    font: 600;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+  }
+  .theme p{
+    text-align: center;
+  } */
