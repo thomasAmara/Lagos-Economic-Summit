@@ -7,7 +7,12 @@ import Footer from "./Components/Footer";
 // const AboutUs = lazy(() => import("./Pages/AboutUs"));
 // const Home = lazy(() => import("./Pages/Home"));
 const Sponsors = lazy(() => import("./Pages/Sponsors"));
-const Speakers = lazy(() => import("./Pages/Speaker"));
+// const Speakers = lazy(() => import("./Pages/Speaker"));
+const About = lazy(() => import("./Components/About/About"));
+const Summit = lazy(() => import("./Components/SummitNumber/SummitNumber"));
+const SpeakerOutput = lazy(() => import("./Components/SpeakerOutput/SpeakerOutput"));
+// const Agenda = lazy(() => import("./Components/Agenda/Agenda"));
+
 
 function App() {
   return (
@@ -15,27 +20,36 @@ function App() {
       <div style={{ position: "sticky" }}>
         <Navbar />
         <Element name='AboutUs'>
-          <div style={{ height: "100vh", backgroundColor: "#43E32D" }}>
-            <h1>About Us Section</h1>
+          <div style={{ height: "100%"}}>
+            <About />
           </div>
         </Element>
+
+       <Element name='SummitNumber'>
+         <div style={{ height: "100%"}}>
+            <Summit />
+          </div>
+        </Element>
+
         <Element name='Speakers'>
-          <div style={{ height: "100vh" }}>
-            <h1>Speakers Section</h1>
-            <Speakers />
+          <div style={{ height: "100%", padding: '20px 0' }}>
+            <SpeakerOutput />
           </div>
         </Element>
+
         <Element name='Agenda'>
-          <div style={{ height: "100vh", backgroundColor: "#F3D3D2" }}>
-            <h1>Agenda Section</h1>
+          <div style={{ height: "100%", backgroundColor: "#F3D3D2" }}>
+            {/* <Agenda /> */}
           </div>
         </Element>
+
         <Element name='Sponsors'>
-          <div style={{ height: "100vh", backgroundColor: "#EEE32D" }}>
+          <div style={{ height: "100%", backgroundColor: "#EEE32D" }}>
             <h1>Sponsors Section</h1>
             <Sponsors />
           </div>
         </Element>
+        
         <Footer />
       </div>
     </div>

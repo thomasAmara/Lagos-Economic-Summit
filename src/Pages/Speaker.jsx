@@ -8,7 +8,7 @@ import Killian from "../Assets/Killian.svg";
 import Kamara from "../Assets/johnKamara.jpeg";
 import JohnKamar from "../Assets/John_Kamara.jpeg";
 import { ColoredLine } from "../Components/Colorline";
-import Map from "../Components/MapSection";
+//import Map from "../Components/MapSection";
 import "../Styles/speakerCss.css";
 
 export default function Speaker() {

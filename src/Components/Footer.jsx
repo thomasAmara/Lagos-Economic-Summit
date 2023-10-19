@@ -1,15 +1,16 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import './Footer.css'
-import Adanian from '../Assets/Adanian.png'
+import Adanian from '../Assets/Adalogo.png'
 import {AiFillMail,
-        AiOutlineTwitter,
+        //AiOutlineTwitter,
         AiOutlineInstagram,
         AiFillLinkedin} from 'react-icons/ai'
 import {BiLogoFacebook} from 'react-icons/bi'
 // import {HiOutlineMail} from 'react-icon/hi'
 import {BsFillTelephoneOutboundFill} from 'react-icons/bs'
 import {IoMdMail} from 'react-icons/io'
+import { RiTwitterXLine } from 'react-icons/ri'
 
 
 const Footer = () => {
@@ -51,7 +52,7 @@ return (
                
                 <div style={{display: 'flex', alignItems: 'center', gap: '10px', marginTop: '10px'}}>
                     <IoMdMail size={20} style={{color: '#0F3879'}}/>
-                    <p style={{ textAlign: 'left', color: '#0F3879' }}>+234 706 728 1296</p>
+                    <p style={{ textAlign: 'left', color: '#0F3879' }}>hello@lagosclimatesummit.org</p>
                 </div>
             </div>
             </div>
@@ -81,7 +82,7 @@ return (
             <BiLogoFacebook size={20}/>
             </a>
             <a href="https://twitter.com/OfficialApata" class="iconlink" target="_blank" rel='noreferrer'>
-            <AiOutlineTwitter size={20}/>
+            <RiTwitterXLine size={20}/>
             </a>
             <a href="/" class="iconlink" target="_blank" rel='noreferrer'>
             <AiOutlineInstagram size={20}/>

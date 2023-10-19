@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Truncate.css'
+// import React, { useState } from 'react';
+// import './Truncate.css'
 
 // const TextTruncate = ({ text, maxLength }) => {
 // const [isTruncated, setIsTruncated] = useState(true);
@@ -24,21 +24,21 @@ import './Truncate.css'
 
 // export default TextTruncate;
 
-const TextTruncate = ({ text, maxLength }) => {
-    const [isTruncated, setIsTruncated] = useState(true);
-    const toggleTruncate = () => {
-    setIsTruncated(!isTruncated);
-    };
+// const TextTruncate = ({ text, maxLength }) => {
+//     const [isTruncated, setIsTruncated] = useState(true);
+//     const toggleTruncate = () => {
+//     setIsTruncated(!isTruncated);
+//     };
 
-    const truncatedText = isTruncated ? text.slice(0, maxLength) + '' : text;
-    return (
-    <div className="text-truncate">
-        <p dangerouslySetInnerHTML={{ __html: truncatedText.replace(/\n/g, '<br />') }} />
-        <button className="read-more-button" onClick={toggleTruncate}>
-        {isTruncated ? 'Show More' : 'Show Less'}
-        </button>
-    </div>
-    );
-};
+//     const truncatedText = isTruncated ? text.slice(0, maxLength) + '' : text;
+//     return (
+//     <div className="text-truncate">
+//         <p dangerouslySetInnerHTML={{ __html: truncatedText.replace(/\n/g, '<br />') }} />
+//         <button className="read-more-button" onClick={toggleTruncate}>
+//         {isTruncated ? 'Show More' : 'Show Less'}
+//         </button>
+//     </div>
+//     );
+// };
 
-export default TextTruncate; 
+// export default TextTruncate; 

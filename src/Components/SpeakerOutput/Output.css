@@ -1,12 +1,12 @@
 .speaker-container{
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 25px 0;
-    gap: 20px;
+    gap: 12px;
 }
 @media (max-width: 768px){
     .speaker-container{
@@ -15,3 +15,12 @@
         align-items: center;
     }
 }
+.topic {
+    margin: auto;
+    /* margin-bottom: 15px; */
+    font-weight: 700;
+    border-bottom: 3px solid;
+    border-color: #0f3879;
+    width: fit-content;
+    text-align: center;
+  }

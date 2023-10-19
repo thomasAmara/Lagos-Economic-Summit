@@ -56,3 +56,12 @@
     font-size: ;
     font-weight: ;
 } */
+.eko {
+  margin: auto;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 3px solid;
+  border-color: #0f3879;
+  width: fit-content;
+  text-align: center;
+}
