@@ -1,4 +1,4 @@
-/* 
+
 .accordion-container {
     width: 80%;
     margin: 0 auto;
@@ -91,6 +91,7 @@
     display: grid;
     place-content: center;
     background-color: #0f3879;
+    padding: 15px 0;
   }
   .theme h4{
     font: 600;
@@ -101,4 +102,5 @@
   }
   .theme p{
     text-align: center;
-  } */
+    font-size: 1.2rem;
+  }
