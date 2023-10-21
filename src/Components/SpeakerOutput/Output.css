@@ -10,14 +10,12 @@
 }
 @media (max-width: 768px){
     .speaker-container{
-        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
     }
 }
 .topic {
     margin: auto;
-    /* margin-bottom: 15px; */
     font-weight: 700;
     border-bottom: 3px solid;
     border-color: #0f3879;
