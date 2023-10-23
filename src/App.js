@@ -13,7 +13,7 @@ const Summit = lazy(() => import("./Components/SummitNumber/SummitNumber"));
 const SpeakerOutput = lazy(() =>
   import("./Components/SpeakerOutput/SpeakerOutput")
 );
-// const Agenda = lazy(() => import("./Components/Agenda/Agenda"));
+const Agenda = lazy(() => import("./Components/Agenda/Agenda"));
 
 function App() {
   return (
@@ -38,11 +38,11 @@ function App() {
           </div>
         </Element>
 
-        {/* <Element name='Agenda'>
-          <div style={{ height: "100%", backgroundColor: "#F3D3D2" }}>
-            <Agenda />
+        <Element name='Agenda'>
+          <div style={{ height: "100%", padding: "30px 0" }}>
+            {/* <Agenda /> */}
           </div>
-        </Element> */}
+        </Element>
 
         <Element name='Sponsors'>
           <div style={{ height: "100%" }}>
