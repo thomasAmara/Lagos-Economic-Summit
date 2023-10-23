@@ -3,6 +3,7 @@ import {
   Box,
   Text,
   //Button,
+  Image,
   SimpleGrid,
 } from "@chakra-ui/react";
 // import Bolt from "../Assets/Bolts.png";
@@ -14,9 +15,21 @@ import Afya from "../Assets/AfyaRekod.jpeg";
 // import { ColoredLine } from "../Components/Colorline";
 
 export default function Sponsors() {
+  const email = "lagos-summit@forum.com";
+  const imageUrl =
+    "https://global-aiconference.com/wp-content/uploads…3007-Ai23-Web-Backgrounds-1900x600px-1-scaled.jpg";
+  const Url =
+    "	https://global-aiconference.com/wp-content/uploads/2023/07/checked.png";
   return (
     <Box>
-      <Box>
+      <Box
+        // backgroundImage: `url(${image2})`,
+        backgroundImage={`url(${imageUrl})`}
+        bgImage={`url(${imageUrl})`}
+        backgroundSize='cover'
+        // backgroundPosition='100%'
+        backgroundPosition='center'
+      >
         <Box width='100%' maxWidth='1280px' margin='0 auto'>
           <Box
             display='flex'
@@ -46,11 +59,26 @@ export default function Sponsors() {
               </Text>
               {/* <ColoredLine color='#0F3879' /> */}
             </Box>
-            <Text>
-              To discuss sponsorship and visibility opportunities at the
-              International AI Summit, please contact Karolina Stankiewicz on
-              ai-conference@forum-europe.com
-            </Text>
+            <Box
+              display='flex'
+              flexDirection='row'
+              // justifyContent='space-evenly'
+              py='10px'
+            >
+              <Text fontSize='18px'>
+                To discuss sponsorship and visibility opportunities at the
+                International Lagos Summit, please contact Killian Mayua on{" "}
+              </Text>
+              <Text ml='5px' color='#0A1172'>
+                <a
+                  style={{ fontSize: "18px", Color: "#0A1172" }}
+                  href={`mailto:${email}`}
+                >
+                  {" "}
+                  {email}
+                </a>
+              </Text>
+            </Box>
 
             <SimpleGrid
               // minChildWidth={["120px", "150px"]}
@@ -63,15 +91,9 @@ export default function Sponsors() {
                   // minHeight='150px'
                   // maxWidth='150px'
                   // width='100%'
-                  // display='flex'
-                  // alignItems='center'
-                  // backgroundColor='#F2F2F2F'
-                  // borderRadius='6px'
-                  // bg='#FFF'
-                  // boxShadow='2px 3px 5px 0px rgba(0,0,0,0.75)'
-                  // p='30px'
+                  display='flex'
                   color='#000'
-                  justifyContent='center'
+                  justifyContent='flex-start'
                   // style={{
                   //   // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(${item.imageURL})`,
                   //   backgroundSize: "cover",
@@ -89,7 +111,12 @@ export default function Sponsors() {
                     // height='100%'
                     alt=''
                   /> */}
-                  <Text>{item.text}</Text>
+                  <Box width='50px'>
+                    <Image src={Url} />
+                  </Box>
+                  <Box ml='15px' display='flex' alignItems='center'>
+                    <Text fontSize='18px'>{item.text}</Text>
+                  </Box>
                 </Box>
               ))}
             </SimpleGrid>
@@ -105,6 +132,7 @@ const Sponsor = [
     name: "Early Bird Ticket",
     text: "Exclusive speaking positions | Your organisation can contribute to the discussion.",
     price: "500",
+
     imageURL: Agra,
   },
   {
