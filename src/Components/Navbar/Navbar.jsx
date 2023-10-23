@@ -46,13 +46,23 @@ export default function Navbar() {
                 </Text>
               </Link>
             </div>
+<<<<<<< HEAD
             <div className='navbar-svg'>
               <Link to='Information' smooth={true} duration={500}>
+=======
+            {/* <Link to='/Blog'> */}
+            <div className='navbar-svg'>
+              <Link to='Sponsors' smooth={true} duration={500}>
+>>>>>>> f2e4c17772bbab3646ac9e27b305e0ba2a5fe138
                 <Text fontSize='15px' fontWeight='600'>
                   Practical Information
                 </Text>
               </Link>
             </div>
+<<<<<<< HEAD
+=======
+            {/* </Link> */}
+>>>>>>> f2e4c17772bbab3646ac9e27b305e0ba2a5fe138
             {/* <Link>Gallery</Link> */}
           </div>
           <div className='book-now'>

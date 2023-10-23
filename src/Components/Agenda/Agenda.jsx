@@ -56,7 +56,7 @@ function Accordion() {
   return (
     <>
     <div className='contain'>
-        <p className="topic">
+        <p className="topics">
             Agenda
         </p>
     </div>

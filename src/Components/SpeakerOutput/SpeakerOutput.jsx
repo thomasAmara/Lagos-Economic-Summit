@@ -6,7 +6,7 @@ import Speakers from '../../Components/NewSpeakers'
  function SpeakerOutput() {
   return (
     <div className="speaker-wrap">
-        <p className="topic">SPEAKERS</p>
+        <p className="topic">Speakers</p>
       <div className='speaker-container'> 
       <Speakers
           src={Killian}
