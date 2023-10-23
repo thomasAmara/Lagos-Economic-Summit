@@ -52,7 +52,7 @@ export default function Sponsors() {
                 alignItems='center'
                 color='#0F3879'
                 fontWeight='600'
-                fontSize='50px'
+                fontSize={["42px", "50px"]}
               >
                 Sponsorship Opportunities
               </Text>
@@ -60,7 +60,7 @@ export default function Sponsors() {
             </Box>
             <Box
               display='flex'
-              flexDirection='row'
+              flexDirection={["column", "row"]}
               // justifyContent='space-evenly'
               py='10px'
             >
@@ -68,7 +68,7 @@ export default function Sponsors() {
                 To discuss sponsorship and visibility opportunities at the
                 International Lagos Summit, please contact Killian Mayua on{" "}
               </Text>
-              <Text ml='5px' color='#0A1172'>
+              <Text ml={["0px", "5px"]} color='#0A1172'>
                 <a
                   style={{ fontSize: "18px", Color: "#0A1172" }}
                   href={`mailto:${email}`}
@@ -110,8 +110,8 @@ export default function Sponsors() {
                     // height='100%'
                     alt=''
                   /> */}
-                  <Box width='50px'>
-                    <Image src={Url} />
+                  <Box display='flex' alignItems='center' width={["50px"]}>
+                    <Image width='100%' src={Url} />
                   </Box>
                   <Box ml='15px' display='flex' alignItems='center'>
                     <Text fontSize='18px'>{item.text}</Text>
@@ -142,7 +142,7 @@ const Sponsor = [
   },
   {
     name: "Early Bird Ticket",
-    text: "European and global outreach | Engage in interactive, public discussions with businesses, policymakers and media.",
+    text: "African and global outreach | Engage in interactive, public discussions with businesses, policymakers and media.",
     price: "500",
     imageURL: US,
   },
