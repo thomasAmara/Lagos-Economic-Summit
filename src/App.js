@@ -38,11 +38,11 @@ function App() {
           </div>
         </Element>
 
-        <Element name='Agenda'>
+        {/* <Element name='Agenda'>
           <div style={{ height: "100%", backgroundColor: "#F3D3D2" }}>
-            {/* <Agenda /> */}
+            <Agenda />
           </div>
-        </Element>
+        </Element> */}
 
         <Element name='Sponsors'>
           <div style={{ height: "100%" }}>
