@@ -17,18 +17,17 @@ import Afya from "../Assets/AfyaRekod.jpeg";
 export default function Sponsors() {
   const email = "lagos-summit@forum.com";
   const imageUrl =
-    "https://global-aiconference.com/wp-content/uploads…3007-Ai23-Web-Backgrounds-1900x600px-1-scaled.jpg";
+    "https://global-aiconference.com/wp-content/uploads/2023/07/3007-Ai23-Web-Backgrounds-1900x600px-1-scaled.jpg";
   const Url =
     "	https://global-aiconference.com/wp-content/uploads/2023/07/checked.png";
   return (
     <Box>
       <Box
-        // backgroundImage: `url(${image2})`,
-        backgroundImage={`url(${imageUrl})`}
+        pb='40px'
         bgImage={`url(${imageUrl})`}
-        backgroundSize='cover'
-        // backgroundPosition='100%'
-        backgroundPosition='center'
+        // backgroundSize='cover'
+        backgroundPosition='100%'
+        // backgroundPosition='center'
       >
         <Box width='100%' maxWidth='1280px' margin='0 auto'>
           <Box
