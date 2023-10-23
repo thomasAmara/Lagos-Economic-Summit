@@ -16,7 +16,12 @@ export default function Presenter() {
         p='20px 25px'
       >
         <Box margin='0 auto'>
-          <Text color='#0F3879' fontSize='50px' fontWeight='600'>
+          <Text
+            color='#0F3879'
+            textAlign='center'
+            fontSize={["42px", "50px"]}
+            fontWeight='600'
+          >
             Sponsored by
           </Text>
         </Box>
