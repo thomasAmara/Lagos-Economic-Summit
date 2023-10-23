@@ -62,9 +62,13 @@ export default function Navbar() {
               </Link>
             </div>
             {/* <Link to='/Blog'> */}
-            <Text fontSize='15px' fontWeight='600'>
-              Practical Information
-            </Text>
+            <div className='navbar-svg'>
+              <Link to='Sponsors' smooth={true} duration={500}>
+                <Text fontSize='15px' fontWeight='600'>
+                  Practical Information
+                </Text>
+              </Link>
+            </div>
             {/* </Link> */}
             {/* <Link>Gallery</Link> */}
           </div>
