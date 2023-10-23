@@ -17,8 +17,11 @@
 .topic {
     margin: auto;
     font-weight: 700;
-    border-bottom: 3px solid;
-    border-color: #0f3879;
+   font-size: 3.125rem;
+    color: #0f3879;
+    /* border-bottom: 3px solid;
+    border-color: #0f3879; */
     width: fit-content;
     text-align: center;
   }
+ 

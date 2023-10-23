@@ -70,12 +70,13 @@
   .accordion-time{
     width: 90px;
   }
-  .topic {
+  .topics {
     margin: auto;
     margin-bottom: 15px;
     font-weight: 700;
-    border-bottom: 3px solid;
-    border-color: #0f3879;
+    /* border-bottom: 3px solid; */
+    font-size: 3.125rem;
+    color: #0f3879;
     width: fit-content;
     text-align: center;
   }
@@ -103,4 +104,7 @@
   .theme p{
     text-align: center;
     font-size: 1.2rem;
+  }
+  .contain{
+    margin-bottom: 10px;
   }
