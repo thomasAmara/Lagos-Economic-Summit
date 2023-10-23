@@ -13,7 +13,7 @@ const Summit = lazy(() => import("./Components/SummitNumber/SummitNumber"));
 const SpeakerOutput = lazy(() =>
   import("./Components/SpeakerOutput/SpeakerOutput")
 );
-const Agenda = lazy(() => import("./Components/Agenda/Agenda"));
+// const Agenda = lazy(() => import("./Components/Agenda/Agenda"));
 
 function App() {
   return (
