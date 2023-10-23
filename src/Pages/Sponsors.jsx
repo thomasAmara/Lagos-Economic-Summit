@@ -16,15 +16,15 @@ import Afya from "../Assets/AfyaRekod.jpeg";
 
 export default function Sponsors() {
   const email = "lagos-summit@forum.com";
-  const imageUrl =
-    "https://global-aiconference.com/wp-content/uploads/2023/07/3007-Ai23-Web-Backgrounds-1900x600px-1-scaled.jpg";
+  // const imageUrl =
+  //   "https://global-aiconference.com/wp-content/uploads/2023/07/3007-Ai23-Web-Backgrounds-1900x600px-1-scaled.jpg";
   const Url =
     "	https://global-aiconference.com/wp-content/uploads/2023/07/checked.png";
   return (
     <Box>
       <Box
         pb='40px'
-        bgImage={`url(${imageUrl})`}
+        // bgImage={`url(${imageUrl})`}
         // backgroundSize='cover'
         backgroundPosition='100%'
         // backgroundPosition='center'
